@@ -10,6 +10,9 @@
   margin-bottom: 16px;
 }
 .method-of-creation__list {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 .method-of-creation__item {
   font-family: 'Cera Pro';
