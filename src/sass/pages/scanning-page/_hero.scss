@@ -1,7 +1,10 @@
+<<<<<<< Updated upstream
 .body {
   margin: 0;
 }
 
+=======
+>>>>>>> Stashed changes
 .container {
   @media screen and (min-width: 480px) {
     max-width: 480px;
@@ -43,7 +46,11 @@
   margin: 0;
   margin-bottom: 16px;
 
+<<<<<<< Updated upstream
   color: #487996;
+=======
+  color: $secondary-color-text;
+>>>>>>> Stashed changes
 
   @media screen and (min-width: 768px) {
     font-size: 36px;
@@ -73,7 +80,11 @@
   font-size: 16px;
   line-height: 1.25;
 
+<<<<<<< Updated upstream
   color: #2b2b2b;
+=======
+  color: $primary-color-text;
+>>>>>>> Stashed changes
 
   @media screen and (max-width: 767px) {
   }
@@ -100,7 +111,11 @@
   line-height: 1.25;
   margin-bottom: 16px;
 
+<<<<<<< Updated upstream
   color: #2b2b2b;
+=======
+  color: $primary-color-text;
+>>>>>>> Stashed changes
 
   @media screen and (max-width: 767px) {
   }
@@ -128,6 +143,7 @@ a {
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
 }
+<<<<<<< Updated upstream
 
 .order-button {
   color: #487996;
@@ -164,3 +180,5 @@ a {
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
   border-radius: 30.5px;
 }
+=======
+>>>>>>> Stashed changes

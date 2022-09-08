@@ -45,6 +45,10 @@ body {
   font-family: "Cera Pro Regular", sans-serif;
   color: #2B2B2B;
   background-color: #ffffff;
+<<<<<<< Updated upstream
+=======
+  margin: 0;
+>>>>>>> Stashed changes
 }
 
 p,
@@ -105,8 +109,35 @@ picture {
   }
 }
 
+<<<<<<< Updated upstream
 .body {
   margin: 0;
+=======
+.order-button {
+  color: #487996;
+  font-family: "Cera Pro Medium";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #487996;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 277px;
+  height: 56px;
+  background: #f5f4fa;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+>>>>>>> Stashed changes
 }
 
 @media screen and (min-width: 480px) {
@@ -186,7 +217,11 @@ picture {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
+<<<<<<< Updated upstream
   color: #2b2b2b;
+=======
+  color: #2B2B2B;
+>>>>>>> Stashed changes
   max-width: 280px;
   max-width: 515px;
 }
@@ -207,7 +242,11 @@ picture {
   font-size: 16px;
   line-height: 1.25;
   margin-bottom: 16px;
+<<<<<<< Updated upstream
   color: #2b2b2b;
+=======
+  color: #2B2B2B;
+>>>>>>> Stashed changes
   max-width: 280px;
   max-width: 515px;
 }
@@ -229,6 +268,7 @@ a {
   text-decoration: none;
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
+<<<<<<< Updated upstream
 }
 
 .order-button {
@@ -256,4 +296,6 @@ a {
   background: #f5f5fa;
   box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
   border-radius: 30.5px;
+=======
+>>>>>>> Stashed changes
 }/*# sourceMappingURL=index.css.map */
