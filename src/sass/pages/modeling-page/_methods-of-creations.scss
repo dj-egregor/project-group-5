@@ -57,4 +57,9 @@
     (min-resolution: 2dppx) {
     background-image: url('/src/images/mobile/3d-modelling-page/methods-of-creations-mobile@2x.jpg');
   }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url('/src/images/mobile/3d-modelling-page/methods-of-creations-mobile@3x.jpg');
+  }
 }
