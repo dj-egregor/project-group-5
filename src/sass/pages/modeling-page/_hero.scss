@@ -1,29 +1,27 @@
 .modeling-hero {
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-.modeling-hero__main-title {
-  font-family: 'Cera Pro';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: $secondary-color-text;
-  text-transform: uppercase;
-
-  margin-bottom: 16px;
-}
-.modeling-hero__text {
-  font-family: 'Cera Pro';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  color: $primary-color-text;
-
-  display: inline-block;
   margin-bottom: 40px;
-}
-.modeling-hero__text--first {
-  margin-bottom: 16px;
+  &__main-title {
+    font-family: 'Cera Pro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: $secondary-color-text;
+    text-transform: uppercase;
+
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-family: 'Cera Pro Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: $primary-color-text;
+
+    display: inline-block;
+  }
+  &__text--first {
+    margin-bottom: 16px;
+  }
 }
