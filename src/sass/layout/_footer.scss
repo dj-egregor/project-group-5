@@ -1,0 +1,26 @@
+.footer-container {
+background-color: $footer-bgc;
+}
+.nenu-link {
+    @include font (400, 16, 1.25, 0.01em);
+        color: $primary-color-text;
+}
+
+.menu-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer-soc-link {
+    @include font (400, 16, 1.25, 0.01em);
+        color: $primary-color-text;
+}
+.footer-soc-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+.address-link {
+    @include font (400, 16, 1.25, 0.01em);
+    color : $secondary-color-text;
+}
+.address-item:not(:last-child) {
+    margin-bottom: 8px;
+}
