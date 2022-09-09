@@ -1,7 +1,30 @@
-.footer-container {
+.footer{
 background-color: $footer-bgc;
 }
-.nenu-link {
+
+.footer-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+text-align: center;
+
+}
+.logo {
+    margin-bottom: 19px;
+    display: flex;
+justify-content: center
+}
+.footer-content{
+    display: flex;
+    width: 100%;
+}
+.footer-img{
+    width: 192px;
+    height: 48px;
+}
+.footer-menu {
+    margin-bottom: 24px;
+}
+.menu-link {
     @include font (400, 16, 1.25, 0.01em);
         color: $primary-color-text;
 }
@@ -9,7 +32,10 @@ background-color: $footer-bgc;
 .menu-item:not(:last-child) {
     margin-bottom: 8px;
 }
-
+.footer-soc {
+    margin-bottom: 24px;
+    margin-left: 52px;
+}
 .footer-soc-link {
     @include font (400, 16, 1.25, 0.01em);
         color: $primary-color-text;
@@ -17,20 +43,29 @@ background-color: $footer-bgc;
 .footer-soc-item:not(:last-child) {
     margin-bottom: 8px;
 }
-.address-link-mail{
-    padding-top: 8px;
-    padding-bottom: 24px;
+.footer-address{
+    margin-left: auto;
 }
-.address-link {
+.address-text{
     @include font (400, 16, 1.25, 0.01em);
-    color : $secondary-color-text;
-}
-.address-title {
-    @include font (400, 16, 1.25, 0.01em);
-}
-.address-link-tell{
-    padding-top: 8px;
-}
-.address-item:not(:last-child) {
     margin-bottom: 8px;
+}
+.address-item-mail{
+    margin-bottom: 24px;
+}
+.address-link-mail{
+   
+@include font (400, 16, 1.25, 0.01em);
+    color: $secondary-color-text;
+    
+   
+}
+.address-item-tell{
+    margin-top: 24px;
+}
+
+.address-link-tell{
+    @include font (400, 16, 1.25, 0.01em);
+        color: $secondary-color-text;
+
 }

@@ -1,8 +1,14 @@
 <section class="footer">
     <div class="footer-container container">
         <div class="logo">
-          
+        <picture>
+            <source srcset="./images/desktop/logo/logo-desktop@1x.jpg 1x,./images/desktop/logo/logo-desktop@2x.jpg 2x,./images/desktop/logo/logo-desktop@3x.jpg 3x" media="(min-width: 1200px)"/>
+            <source srcset="./images/tablet/logo/logo-footer-tablet@1x.jpg 1x,./images/tablet/logo/logo-footer-tablet@2x.jpg 2x,./images/tablet/logo/logo-footer-tablet@3x.jpg 3x" media="(min-width: 768px)"/>
+            <source srcset="./images/mobile/logo/logo-footer-mobile@1x.jpg 1x,./images/mobile/logo/logo-footer-mobile@2x.jpg 2x,./images/mobile/logo/logo-footer-mobile@3x.jpg 3x" media="(max-width: 767px)"/>
+            <img class="footer-logo" src="./images/desktop/logo/logo-desktop@2x.jpg" alt="logo"/>
+        </picture>
         </div>
+      <div class="footer-content">
         <div class="footer-menu">
             <ul class="menu-list">
                 <li class="menu-item">
@@ -36,23 +42,25 @@
                 <li class="footer-soc-item">
                     <a class="footer-soc-link" href="">Facebook</a>
                 </li>
+            </ul>
         </div>
         <div class="footer-address">
             <address class="address">
                 <ul class="address-list">
-                <li class="address-item">
-                    <h2 class="address-title">Email</h2> <a class="address-link-mail" href="mail:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
+                <li class="address-item-mail">
+                    <p class="address-text">Email</p> <a class="address-link-mail" href="mail:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
                 </li>
-                    <li class="address-item">
-                        <h2 class="address-title">Телефони</h2> <a class="address-link-tell" href="tell:+38 (093) 643 22 88">+38
+                    <li class="address-item-tell">
+                        <p class="address-text">Телефони</p> <a class="address-link-tell" href="tell:+380936432288">+38
                             (093) 643 22
                             88</a>
                     </li>
-                    <li class="address-item"> <a class="address-link-tell" href="tell:+38 (050) 345 44 23"> +38 (050) 345 44
+                    <li class="address-item"> <a class="address-link-tell" href="tell:+380503454423"> +38 (050) 345 44
                             23</a>
                     </li>
                 </ul>
             </address>
+        </div>
         </div>
     </div>
 </section>
