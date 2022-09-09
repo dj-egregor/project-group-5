@@ -21,6 +21,9 @@ background-color: $footer-bgc;
     @include font (400, 16, 1.25, 0.01em);
     color : $secondary-color-text;
 }
+.address-title {
+    @include font (400, 16, 1.25, 0.01em);
+}
 .address-item:not(:last-child) {
     margin-bottom: 8px;
 }
