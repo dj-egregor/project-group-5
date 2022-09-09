@@ -17,12 +17,19 @@ background-color: $footer-bgc;
 .footer-soc-item:not(:last-child) {
     margin-bottom: 8px;
 }
+.address-link-mail{
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
 .address-link {
     @include font (400, 16, 1.25, 0.01em);
     color : $secondary-color-text;
 }
 .address-title {
     @include font (400, 16, 1.25, 0.01em);
+}
+.address-link-tell{
+    padding-top: 8px;
 }
 .address-item:not(:last-child) {
     margin-bottom: 8px;
