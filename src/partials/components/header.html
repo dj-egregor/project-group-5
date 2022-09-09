@@ -1,0 +1,42 @@
+<header>
+    <div class="container">
+        <a href="/index.html" class="">
+            <picture>
+                <source
+                    srcset="
+                        ./src/images/desktop/logo/logo-desktop@1x.jpg 1x, 
+                        ./src/images/desktop/logo/logo-desktop@2x.jpg 2x,
+                        ./src/images/desktop/logo/logo-desktop@3x.jpg 3x"
+                    media="(min-width: 1440px)"
+                    />
+                <source
+                    srcset="
+                        ./src/images/tablet/logo/logo-header-tablet@1x.jpg 1x,
+                        ./src/images/tablet/logo/logo-header-tablet@2x.jpg 2x,
+                        ./src/images/tablet/logo/logo-header-tablet@3x,jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="
+                        ./src/images/mobile/logo/logo-header-mobile@1x.jpg 1x,
+                        ./src/images/mobile/logo/logo-header-mobile@1x.jpg 2x,
+                        ./src/images/mobile/logo/logo-header-mobile@3x.jpg 3x
+                    "
+                    media="(max-width: 767px)"
+                    />
+                    <img class="logo" src="./src/images/desktop/logo/logo-desktop@1x.jpg" alt="Логотип компании 3DFreedom" />
+            </picture>
+        </a>
+        <button type="button" class="menu-open">
+            <svg class="menu-open__icon" width="32" height="32" aria-label="Кнопка виклику мобільного меню">
+                <use href="./src/images/icons.svg#icon-burger"></use>
+            </svg>
+        </button>
+        <button type="button" class="tel-open">
+            <svg class="tel-open__icon" width="24" height="24" aria-label="Кнопка відображення контактів">
+                <use href="./src/images/icons.svg#icon-icon-tel"></use>
+            </svg>
+        </button>
+    </div>
+</header>
