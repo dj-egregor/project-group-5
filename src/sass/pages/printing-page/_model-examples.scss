@@ -1,4 +1,4 @@
-.model-exemples {
+.model-examples {
   padding-top: 40px;
   padding-bottom: 38px;
 
@@ -13,7 +13,7 @@
   }
 }
 
-.model-exemples__title {
+.model-examples__title {
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 1.25;
@@ -30,14 +30,14 @@
   }
 }
 
-.model-exemples__list {
+.model-examples__list {
   display: flex;
   flex-wrap: wrap;
   row-gap: 16px;
   column-gap: 20px;
 }
 
-.model-exemples__item {
+.model-examples__item {
   @include centered-flex;
 
   flex-direction: column;
@@ -56,7 +56,7 @@
   }
 }
 
-.model-exemples__text {
+.model-examples__text {
   margin-top: 17px;
   font-weight: 400;
   font-size: 14px;
