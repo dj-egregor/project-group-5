@@ -7,6 +7,7 @@ background-color: $footer-bgc;
     padding-bottom: 32px;
 text-align: center;
 
+
 }
 .logo {
     margin-bottom: 19px;
@@ -14,8 +15,11 @@ text-align: center;
 justify-content: center
 }
 .footer-content{
-    display: flex;
-    width: 100%;
+   
+   
+    @media screen and (min-width: 768px) {
+        display: flex;
+        }
 }
 .footer-img{
     width: 192px;
@@ -34,25 +38,34 @@ justify-content: center
 }
 .footer-soc {
     margin-bottom: 24px;
-    margin-left: 52px;
+   
+    
+        @media screen and (min-width: 768px) {
+            margin-left: 52px;
+        }
+   
 }
 .footer-soc-link {
     @include font (400, 16, 1.25, 0.01em);
         color: $primary-color-text;
+        
+        
+            @media screen and (min-width: 768px) {
+                display: flex;
+                margin-left: auto;  
+              
+            }
 }
 .footer-soc-item:not(:last-child) {
     margin-bottom: 8px;
 }
-.footer-address{
-    margin-left: auto;
-}
+
 .address-text{
     @include font (400, 16, 1.25, 0.01em);
     margin-bottom: 8px;
 }
-.address-item-mail{
-    margin-bottom: 24px;
-}
+
+
 .address-link-mail{
    
 @include font (400, 16, 1.25, 0.01em);
@@ -62,6 +75,9 @@ justify-content: center
 }
 .address-item-tell{
     margin-top: 24px;
+}
+.address-item-tell:not(:last-child) {
+    margin-bottom: 8px;
 }
 
 .address-link-tell{
