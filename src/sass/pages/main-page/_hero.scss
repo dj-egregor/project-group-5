@@ -1,0 +1,55 @@
+.main-hero {
+}
+.container {
+  width: 100%;
+  max-width: 480px;
+  padding-left: 20px;
+  padding-left: 20px;
+  margin: auto;
+}
+.main-hero__title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-family: 'Caviar Dreams', sans-serif;
+  font-size: 18px;
+  font-weight: 21px;
+
+  // font-size: 24px;
+  // line-height: 28px;
+
+  // font-size: 48px;
+  // line-height: 56px;
+}
+.hero__after-title {
+  text-align: center;
+  font-family: 'Caviar Dreams', sans-serif;
+  font-size: 19px;
+  line-height: 16px;
+
+  // font-size: 18px;
+  // line-height: 21px;
+
+  // font-size: 36px;
+  // line-height: 42px;
+}
+.main-hero__list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  width: 100%;
+}
+.main-hero__item {
+  flex-basis: calc((100% - 2 * 15px) / 3);
+  overflow: hidden;
+}
+.main-hero__item:nth-child(1) {
+  border-radius: 0 35px 0 0;
+}
+.main-hero__item:nth-child(2) {
+  border-radius: 50%;
+}
+.main-hero__item:nth-child(3) {
+  border-radius: 0 25px;
+}
