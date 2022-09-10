@@ -1,12 +1,6 @@
 .section {
   @media screen and (max-width: 767px) {
     width: 280px;
-    margin: 40px 20px;
-  }
-
-  @include tablet {
-    width: 704px;
-    margin: 40px 32px;
   }
 
   @include desktop {
@@ -97,11 +91,18 @@
     max-width: 515px;
     font-size: 18px;
     display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+.scanning-hero__pharagraph-first {
+  @include desktop {
+    margin-bottom: 16px;
   }
 }
 
 .new-row {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1439px) {
     display: none;
   }
 }
