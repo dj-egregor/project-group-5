@@ -24,12 +24,13 @@
 }
 .gallery__list {
   height: auto;
-  width: 280px;
+  min-width: 280px;
 
   margin: 0 auto;
   display: grid;
-  grid-auto-rows: minmax(150px, auto);
+  grid-auto-rows: minmax(168px, auto);
 
+  // grid-gap: 11px;
   background-color: transparent;
   // counter-reset: grid-item;
 
@@ -44,10 +45,6 @@
     grid-auto-rows: minmax(249px, auto);
   }
 }
-.gallery__subtitle:not(:last-child) {
-  margin-bottom: 24px;
-}
-
 .gallery__img {
   margin-bottom: 8px;
   @include tablet {
