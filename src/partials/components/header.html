@@ -1,0 +1,107 @@
+<header class="header">
+  <div class="container header-container">
+    <a href="" class="header-container__link">
+      <picture class="header-logo">
+        <source
+          srcset="
+            ./images/desktop/logo/logo-desktop@1x.jpg 1x,
+            ./images/desktop/logo/logo-desktop@2x.jpg 2x,
+            ./images/desktop/logo/logo-desktop@3x.jpg 3x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/logo/logo-header-tablet@1x.jpg 1x,
+            ./images/tablet/logo/logo-header-tablet@2x.jpg 2x,
+            ./images/tablet/logo/logo-header-tablet@3x.jpg 3x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/logo/logo-header-mobile@1x.jpg 1x,
+            ./images/mobile/logo/logo-header-mobile@1x.jpg 2x,
+            ./images/mobile/logo/logo-header-mobile@3x.jpg 3x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="logo"
+          src="./images/desktop/logo/logo-desktop@1x.jpg"
+          alt="Логотип компании 3DFreedom"
+        />
+      </picture>
+    </a>
+
+    <button type="button" class="menu-open">
+      <svg
+        class="menu-open__icon"
+        width="32"
+        height="32"
+        aria-label="Кнопка виклику мобільного меню"
+      >
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <div class="desktop-nav">
+      <nav>
+        <ul class="nav-menu list-item">
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link nav-menu__link--current"
+              >Головна</a
+            >
+          </li>
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link">Послуги</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link">Замовити</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <button type="button" class="tel-open">
+        <svg
+          class="tel-open__icon"
+          width="24"
+          height="24"
+          aria-label="Кнопка відображення контактів"
+        >
+          <use href="./images/icons.svg#icon-icon-tel"></use>
+        </svg>
+      </button>
+
+      <select class="lang">
+        <option value="ENG">ENG</option>
+        <option value="RUS">RUS</option>
+        <option value="UKR" selected>UKR</option>
+      </select>
+
+      <div class="tablet-contacts">
+        <ul class="mob-contacts list-item">
+          <li class="mob-contacts__item">
+            <a href="tel:+380936432288" class="mob-contacts__link">
+              <svg class="nav-contacts__icon" width="14" height="14">
+                <use href="./images/icons.svg#icon-icon-tel"></use>
+              </svg>
+              +38 093 643 22 88
+            </a>
+          </li>
+          <li class="mob-contacts__item">
+            <a href="tel:+380503454423" class="mob-contacts__link">
+              <svg class="nav-contacts__icon" width="14" height="14">
+                <use href="./images/icons.svg#icon-icon-tel"></use>
+              </svg>
+              +38 050 345 44 23
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
