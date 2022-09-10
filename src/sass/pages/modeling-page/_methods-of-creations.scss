@@ -1,32 +1,44 @@
 .method-of-creation-section {
+  @include desktop {
+    padding: 0 120px;
+  }
 }
 .method-of-creation__title {
+  @include font(18px, 700, 23px, 1.28);
   font-family: 'Cera Pro Bold';
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23px;
   text-transform: uppercase;
   color: $secondary-color-text;
 
   margin-bottom: 16px;
+
+  @include tablet {
+    @include font(24px, 700, 30px, 1.25);
+  }
+  @include desktop {
+    @include font(36px, 700, 45px, 1.25);
+    margin-bottom: 24px;
+  }
 }
 .method-of-creation__list {
-  &:not(:last-child) {
-    margin-bottom: 16px;
+  margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 0;
   }
 }
 .method-of-creation__item {
-  font-family: 'Cera Pro Light';
-  font-style: normal;
-  font-weight: 300;
   font-size: 16px;
   line-height: 20px;
-
+  font-weight: 300;
+  font-family: 'Cera Pro Light';
+  font-style: normal;
   color: $primary-color-text;
 
   position: relative;
   margin-left: 15px;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
   &::before {
     content: '';
@@ -42,6 +54,9 @@
     transform: translateY(-50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  @include desktop {
+    @include font(18px, 300, 23px, 1.28);
+  }
 }
 .method-of-creation__bg {
   width: 100%;
@@ -50,7 +65,7 @@
   background-image: url('/src/images/mobile/3d-modelling-page/methods-of-creations-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -61,5 +76,56 @@
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
     background-image: url('/src/images/mobile/3d-modelling-page/methods-of-creations-mobile@3x.jpg');
+  }
+  @include tablet {
+    max-width: 246px;
+    max-height: 144px;
+
+    background-image: url('/src/images/tablet/3d-modelling-page/methods-of-creation-tablet@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/tablet/3d-modelling-page/methods-of-creation-tablet@2x.jpg');
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url('/src/images/tablet/3d-modelling-page/methods-of-creation-tablet@3x.jpg');
+    }
+  }
+  @include desktop {
+    max-width: 515px;
+    min-height: 301px;
+
+    background-image: url('/src/images/desktop/3d-modelling-page/methods-of-creations-desktop@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/desktop/3d-modelling-page/methods-of-creations-desktop@2x.jpg');
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url('/src/images/desktop/3d-modelling-page/methods-of-creations-desktop@3x.jpg');
+    }
+  }
+}
+.thumb-method {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @include desktop {
+    justify-content: flex-start;
+    align-items: flex-end;
   }
 }
