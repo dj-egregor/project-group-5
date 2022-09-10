@@ -1,0 +1,71 @@
+.scan-process_list {
+    display: flex;
+}
+
+.scan-process_item {
+    width: 100%;
+    // flex-basis: calc((100% - 3 * 30%) / 4);
+}
+
+.scan-process_item::before {
+    display: inline-block;
+    content: “”;
+    width: 240px;
+    height: 240px;
+    // left: 32px;
+    // top: 759px;
+        left: 0;
+        top: 0;
+    
+    background: #FFFFFF;
+    
+    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), 
+    inset -1px -1px 16px #FFFFFF;
+    border-radius: 50px 0px;
+    background-image: url(../images/mobile/3d-scanning-page/scan-process-1-mobile@1x.jpg);
+    //background-image: url(./images/mobile/3d-scanning-page/scan-process-1-mobile@1x.jpg);
+    //background-size: 320px 381px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width: 767px) {
+        // background-image: 
+        //   url(./images/mobile/3d-scanning-page/scan-process-1-mobile@1x.jpg);
+      }
+
+
+    }
+
+
+
+.scan-process-title {
+    position: absolute;
+width: 280px;
+height: 23px;
+left: 20px;
+top: 909px;
+
+font-family: 'Cera Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
+
+
+text-transform: uppercase;
+
+color: #487996;
+
+}
+
+.process-after-title {
+    font-family: 'Cera Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+
+color: #487996;
+
+}

@@ -1,0 +1,100 @@
+.process-description {
+  padding-bottom: 60px;
+  @include desktop {
+    padding-bottom: 80px;
+    margin-left: 118px;
+  }
+}
+.process-description__title {
+  @extend %visually-hidden;
+}
+.process-description__item {
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  @include tablet {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+  @include desktop {
+    &:not(:last-child) {
+      margin-bottom: 100px;
+    }
+  }
+}
+.process-description__img {
+  width: 100%;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.15);
+  border-radius: 50px 0px;
+  margin-bottom: 25px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+  @include desktop {
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+  }
+}
+.process-description__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 55px;
+    margin-left: 32px;
+    max-width: 335px;
+  }
+  @include desktop {
+    margin-left: 85px;
+    max-width: 734px;
+    gap: 24px;
+  }
+}
+.process-description__text {
+  @include font(16px, 300, 20px, null);
+  color: $primary-color-text;
+  @include tablet {
+    @include font(16px, 400, 20px, null);
+  }
+  @include desktop {
+    @include font(18px, 300, 23px, null);
+  }
+}
+.process-description__text--part {
+  @include font(16px, 700, 20px, null);
+  text-transform: uppercase;
+  color: $secondary-color-text;
+  @include desktop {
+    @include font(18px, 700, 23px, null);
+  }
+}
+.process-description__link {
+  display: block;
+  @include font(16px, 700, 24px, 0.01em);
+  text-align: center;
+  text-transform: uppercase;
+  color: $secondary-color-text;
+  background-color: $button-bgc;
+  width: 280px;
+  height: 56px;
+  @include centered-margin();
+  padding: 16px 32px;
+  border-radius: 30.5px;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  @include animation(color, background-color, null);
+  &:hover,
+  &:focus {
+    color: $primary-color-text;
+    background-color: $accent-color;
+  }
+  @include tablet {
+    margin-left: 32px;
+  }
+  @include desktop {
+    margin-left: 85px;
+  }
+}

@@ -1,0 +1,108 @@
+.section {
+  @media screen and (max-width: 767px) {
+    width: 280px;
+  }
+
+  @include desktop {
+    width: 1440px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 149px;
+    margin-right: 189px;
+  }
+}
+.scanning-hero__title {
+  font-family: 'Cera Pro Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.26;
+  margin: 0;
+  margin-bottom: 16px;
+
+  color: $secondary-color-text;
+
+  @include tablet {
+    font-size: 36px;
+  }
+  @include desktop {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+}
+
+.scanning-hero__pharagraph-box {
+  @media screen and (max-width: 767px) {
+    height: 992px;
+  }
+
+  @include desktop {
+    max-width: 1440px;
+    display: flex;
+  }
+}
+
+.scanning-hero__pharagraph {
+  justify-content: center;
+  font-family: 'Cera Pro Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $primary-color-text;
+
+  @media screen and (max-width: 767px) {
+  }
+  max-width: 280px;
+
+  @include tablet {
+  }
+  max-width: 515px;
+
+  @include desktop {
+    max-width: 515px;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 72px;
+  }
+}
+
+.scanning-hero__pharagraph-small {
+  justify-content: center;
+  font-family: 'Cera Pro Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+
+  color: $primary-color-text;
+
+  @media screen and (max-width: 767px) {
+  }
+  max-width: 280px;
+
+  @include tablet {
+  }
+  max-width: 515px;
+
+  @include desktop {
+    max-width: 515px;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+.scanning-hero__pharagraph-first {
+  @include desktop {
+    margin-bottom: 16px;
+  }
+}
+
+.new-row {
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+}
