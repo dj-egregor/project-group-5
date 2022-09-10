@@ -2,7 +2,8 @@
 }
 .gallery__container {
   @include desktop {
-    padding: 0 149px;
+    padding-left: 149px;
+    padding-right: 149px;
   }
 }
 
