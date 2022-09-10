@@ -127,9 +127,42 @@
       font-weight: 700;
     }
   }
+
+  .after::after {
+    content: '';
+    width: 50px;
+    height: 40px;
+    background-color: #008cef;
+  }
+
+  &__item {
+    position: relative;
+  }
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  width: 130px;
+  z-index: 10;
+  margin-top: 4px;
+  text-align: center;
+
+  &__item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      color: #2196f3;
+      font-weight: 700;
+    }
+  }
+}
+
+.nav-menu__item:hover .submenu {
+  display: block;
 }
