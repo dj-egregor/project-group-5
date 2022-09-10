@@ -40,7 +40,6 @@
 
       max-width: 100%;
       display: flex;
-      justify-content: space-between;
       align-items: baseline;
       gap: 72px;
     }
@@ -54,7 +53,7 @@
 }
 .modeling-hero__text--item {
   @include desktop {
-    // flex-basis: calc((100% / 2) - 72px);
-    flex-basis: calc(100% / 2);
+    // flex-basis: calc(100% / 2);
+    max-width: 515px;
   }
 }
