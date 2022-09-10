@@ -3,7 +3,7 @@
 }
 
 .more-photo__container {
-  // position: relative;
+  //   position: relative;
 }
 
 // .container {
@@ -18,28 +18,26 @@
 //   }
 // }
 .more-photo__title {
-  font-family: 'Cera Pro';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: #487996;
-  @media screen and (min-width: 768px) {
-    font-size: 36px;
-    line-height: 45px;
-  }
+  @include font(24px, 700, 30px, null);
 
-  @media screen and (min-width: 1440px) {
-    font-size: 48px;
-    line-height: 60px;
+  color: $secondary-color-text;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  @include tablet {
+    @include font(36px, 700, 45px, null);
+    margin-bottom: 32px;
+  }
+  @include desktop {
+    @include font(48px, 700, 60px, null);
+    margin-bottom: 62px;
   }
 }
 
 .more-photo__list {
   display: grid;
-  grid-template-columns: 2 50%;
+  //   grid-template-columns: 2 50%;
   grid-template-rows: auto;
-  background-color: aqua;
 }
 .more-photo__list {
   height: auto;
@@ -53,10 +51,14 @@
   background-color: pink;
   counter-reset: more-photo__item;
   list-style: none;
+
+  //   @include tablet {
+  //   }
+  //   @include desktop {
+  //   }
 }
 
 .more-photo__item {
-  background-color: palevioletred;
   position: relative;
 }
 .more-photo__item:nth-child(6n + 1) {
