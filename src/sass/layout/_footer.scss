@@ -1,0 +1,125 @@
+.footer {
+  background-color: $footer-bgc;
+}
+
+.footer-container {
+  max-width: 1440px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    text-align: left;
+  }
+}
+
+.logo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 0px;
+  }
+
+  &-img {
+    width: 192px;
+    height: 48px;
+  }
+}
+
+.footer-content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.footer-menu {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-left: 277px;
+  }
+}
+
+.footer-menu-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer-menu-link {
+  @include font(16, 400, 1.25, 0.01em);
+  // @include font(400, 16, 1.25, 0.01em);
+  color: $primary-color-text;
+}
+
+.footer-soc {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 52px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-left: 103px;
+  }
+
+  &-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &-link {
+    @include font(16, 400, 1.25, 0.01em);
+    // @include font(400, 16, 1.25, 0.01em);
+    color: $primary-color-text;
+  }
+}
+
+.address {
+  font-style: inherit;
+}
+
+.footer-address {
+  @media screen and (min-width: 768px) {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1440px) {
+    text-align: left;
+    margin-left: 163px;
+  }
+}
+
+.address-text {
+  @include font(16, 400, 1.25, 0.01em);
+  // @include font(400, 16, 1.25, 0.01em);
+  margin-bottom: 8px;
+}
+
+.address-item-mail {
+  margin-bottom: 24px;
+}
+
+.address-link-mail {
+  @include font(16, 400, 1.25, 0.01em);
+  // @include font(400, 16, 1.25, 0.01em);
+  color: $secondary-color-text;
+}
+.address-item-tell:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.address-link-tell {
+  @include font(16, 400, 1.25, 0.01em);
+  // @include font(400, 16, 1.25, 0.01em);
+  color: $secondary-color-text;
+}

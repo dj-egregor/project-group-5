@@ -1,0 +1,84 @@
+.model-examples {
+  padding-top: 20px;
+  padding-bottom: 38px;
+
+  @include tablet {
+    padding-top: 14px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+}
+
+.model-examples__title {
+  margin-bottom: 16px;
+  @include font (700, 24px, 1.25, null);
+  text-transform: uppercase;
+  color: $secondary-color-text;
+
+  @include tablet {
+    font-size: 36px;
+  }
+
+  @include desktop {
+    margin-bottom: 24px;
+    padding-left: 117px;
+    font-size: 48px;
+  }
+}
+
+.model-examples__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 20px;
+}
+
+.model-examples__item {
+  @include centered-flex;
+
+  flex-direction: column;
+  height: 158px;
+  width: calc((100% - 1 * 20px) / 2);
+  box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+
+  @include tablet {
+    width: calc((100% - 3 * 32px) / 4);
+    height: 182px;
+  }
+
+  @include desktop {
+    height: 382px;
+  }
+}
+
+.model-examples__wrap {
+  @include centered-flex;
+  width: 100.88px;
+  height: 85.36px;
+
+  @include tablet {
+    width: 117.95px;
+    height: 98.14px;
+  }
+
+  @include desktop {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+.model-examples__text {
+  @include font (400, 14px, 1.29, null);
+  text-align: center;
+  text-transform: uppercase;
+  color: $secondary-color-text;
+
+  @include desktop {
+    font-size: 18px;
+  }
+}

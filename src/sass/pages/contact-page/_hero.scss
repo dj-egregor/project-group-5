@@ -1,23 +1,29 @@
-.hero {
-  padding: 40px 0;
+.contact-hero {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @include tablet {
+    padding-top: 14px;
+  }
 
   @include desktop {
-    padding: 100px 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
   }
 }
 
-.hero__container {
+.contact-hero__container {
   @include desktop {
-    padding-left: 149px;;
+    padding-left: 117px;
   }
 }
 
-.hero__title {
+.contact-hero__title {
   margin-bottom: 16px;
-  font-size: 24px;
-  line-height: 1.25;
+  
+  @include font (700, 24px, 1.25, null);
   text-transform: uppercase;
-  color: #487996;
+  color: $secondary-color-text;
 
   @include tablet {
     font-size: 36px;
@@ -29,14 +35,14 @@
   }
 }
 
-.hero_wrap {
+.contact-hero_wrap {
   @include tablet {
     display: flex;
     gap: 32px;
   }
 }
 
-.hero__box-video {
+.contact-hero__box-video {
   margin-bottom: 16px;
   max-width: 280px;
   height: 171px;
@@ -49,23 +55,23 @@
   }
 
   @include tablet {
-    max-width: 336px;
+    width: 336px;
     height: 261px;
     margin-bottom: 0;
   }
 
   @include desktop {
-    max-width: 555px;
+    width: 555px;
     height: 315px;
   }
 }
 
-.hero__video {
+.contact-hero__video {
   width: 100%;
   height: 100%;
 }
 
-.hero__box-text {
+.contact-hero__box-text {
   @include tablet {
     max-width: 335px;
   }
@@ -75,17 +81,57 @@
   }
 }
 
-.hero__text {
-  font-size: 16px;
-  line-height: 1.25;
+.contact-hero__text {
+  @include font (400, 16px, 1.25, null);
 
   &:not(:last-child) {
     margin-bottom: 16px;
   }
 
   @include desktop {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.28;
+    @include font (300, 18px, 1.28, null);
+  }
+
+  &:last-child {
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      background-image: url(../images/mobile/contacts-page/emoji-tablet-mobile@1x.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-left: 8px;
+
+      @include retina {
+        background-image: url(../images/mobile/contacts-page/emoji-tablet-mobile@2x.jpg);
+      }
+
+      @include retina3x {
+        background-image: url(../images/mobile/contacts-page/emoji-tablet-mobile@3x.jpg);
+      }
+
+      @include tablet {
+        margin-left: 21px;
+      }
+
+      @include desktop {
+        background-image: url(../images/desktop/contacts-page/emoji-desktop@1x.jpg);
+        display: block;
+        width: 49px;
+        height: 49px;
+        margin-left: 0;
+        margin-top: 56px;
+
+        @include retina {
+          background-image: url(../images/desktop/contacts-page/emoji-desktop@2x.jpg);
+        }
+
+        @include retina3x {
+          background-image: url(../images/desktop/contacts-page/emoji-desktop@3x.jpg);
+        }
+      }
+    }
   }
 }
