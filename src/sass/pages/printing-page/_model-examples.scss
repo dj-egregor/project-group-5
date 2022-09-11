@@ -15,7 +15,8 @@
 
 .model-examples__title {
   margin-bottom: 16px;
-  @include font (700, 24px, 1.25, null);
+  // @include font (700, 24px, 1.25, null);
+  @include font(24px, 700, 1.25, null);
   text-transform: uppercase;
   color: $secondary-color-text;
 
@@ -73,7 +74,8 @@
 }
 
 .model-examples__text {
-  @include font (400, 14px, 1.29, null);
+  // @include font(400, 14px, 1.29, null);
+  @include font(14px, 400, 1.29, null);
   text-align: center;
   text-transform: uppercase;
   color: $secondary-color-text;
