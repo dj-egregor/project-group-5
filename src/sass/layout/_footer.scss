@@ -54,7 +54,7 @@
 }
 
 .footer-menu-link {
-  @include font(16, 400, 1.25, 0.01em);
+  @include font(16px, 400px, 1.25, 0.01em);
   color: $primary-color-text;
 &:hover,
   &:focus {
@@ -80,7 +80,7 @@
   }
 
   &-link {
-    @include font(16, 400, 1.25, 0.01em);
+    @include font(16px, 400px, 1.25, 0.01em);
     
     color: $primary-color-text;
     &:hover,
@@ -107,7 +107,7 @@
 
 .contacts-title {
   font-style: inherit;
-  @include font(16, 400, 1.25, 0.01em);
+  @include font(16px, 400px, 1.25, 0.01em);
   margin-bottom: 8px;
 }
 
@@ -116,7 +116,7 @@
 }
 
 .address-mail__link{
-  @include font(16, 400, 1.25, 0.01em);
+  @include font(16px, 400px, 1.25, 0.01em);
   // @include font(400, 16, 1.25, 0.01em);
   color: $secondary-color-text;
   &:hover,
@@ -130,7 +130,7 @@
 }
 
 .address-tel__link {
-  @include font(16, 400, 1.25, 0.01em);
+  @include font(16px, 400px, 1.25, 0.01em);
   // @include font(400, 16, 1.25, 0.01em);
   color: $secondary-color-text;
   &:hover,
