@@ -24,7 +24,19 @@
   }
 }
 .gallery__list {
+
+  height: auto;
+  max-width: 440px;
+
   margin: 0 auto;
+
+  // display: grid;
+  // grid-auto-rows: minmax(168px, auto);
+
+  // grid-gap: 11px;
+  background-color: transparent;
+  // counter-reset: grid-item;
+
 
   @include tablet {
     height: auto;
@@ -78,6 +90,7 @@
 .gallery__subtitle {
   @include font(16px, 300, 20px, null);
   color: $secondary-color-text;
+  margin-bottom: 24px;
 
   @include desktop {
     @include font(18px, 300, 23px, null);

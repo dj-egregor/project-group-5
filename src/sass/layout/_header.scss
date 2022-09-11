@@ -80,6 +80,10 @@
   color: #bdbdbd;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .tablet-contacts {

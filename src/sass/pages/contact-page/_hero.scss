@@ -1,13 +1,9 @@
 .contact-hero {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 40px;
 
-  @include tablet {
-    padding-top: 14px;
-  }
-
   @include desktop {
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 }
@@ -20,8 +16,8 @@
 
 .contact-hero__title {
   margin-bottom: 16px;
-  
-  @include font (700, 24px, 1.25, null);
+
+  @include font(24px, 700, 1.25, null);
   text-transform: uppercase;
   color: $secondary-color-text;
 
@@ -82,14 +78,14 @@
 }
 
 .contact-hero__text {
-  @include font (400, 16px, 1.25, null);
+  @include font(16px, 400, 1.25, null);
 
   &:not(:last-child) {
     margin-bottom: 16px;
   }
 
   @include desktop {
-    @include font (300, 18px, 1.28, null);
+    @include font(18px, 300, 1.28, null);
   }
 
   &:last-child {
