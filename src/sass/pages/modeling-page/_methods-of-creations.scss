@@ -8,8 +8,6 @@
 }
 .method-of-creation__title {
   @include font(18px, 700, 23px, 1.28);
-  font-family: 'Cera Pro Bold';
-  font-style: normal;
   text-transform: uppercase;
   color: $secondary-color-text;
 
@@ -30,11 +28,7 @@
   }
 }
 .method-of-creation__item {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 300;
-  font-family: 'Cera Pro Light';
-  font-style: normal;
+  @include font(16px, 300, 20px, 1.25);
   color: $primary-color-text;
 
   position: relative;
@@ -70,16 +64,13 @@
   background-position: center;
   background-size: contain;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @include retina {
     background-image: url('/src/images/mobile/3d-modelling-page/methods-of-creations-mobile@2x.jpg');
   }
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
+  @include retina3x {
     background-image: url('/src/images/mobile/3d-modelling-page/methods-of-creations-mobile@3x.jpg');
   }
+
   @include tablet {
     max-width: 246px;
     max-height: 144px;
@@ -89,14 +80,10 @@
     background-position: center;
     background-size: cover;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url('/src/images/tablet/3d-modelling-page/methods-of-creation-tablet@2x.jpg');
     }
-    @media (min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
+    @include retina3x {
       background-image: url('/src/images/tablet/3d-modelling-page/methods-of-creation-tablet@3x.jpg');
     }
   }
@@ -109,14 +96,10 @@
     background-position: center;
     background-size: contain;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url('/src/images/desktop/3d-modelling-page/methods-of-creations-desktop@2x.jpg');
     }
-    @media (min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
+    @include retina3x {
       background-image: url('/src/images/desktop/3d-modelling-page/methods-of-creations-desktop@3x.jpg');
     }
   }
