@@ -1,0 +1,225 @@
+.order-page-hero {
+}
+.order-page {
+  padding-top: 40px;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #487996;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: #487996;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: #487996;
+    margin-bottom: 24px;
+  }
+}
+
+.hero-description {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero-bg {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 171px;
+  background-image: url('../images/mobile/take-order-page/hero-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/take-order-page/hero-mobile@2x.jpg');
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url('../images/mobile/take-order-page/hero-mobile@3x.jpg');
+  }
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 158px;
+    margin-right: 32px;
+    margin-bottom: 0;
+    background-image: url('../images/tablet/take-order-page/hero-tablet@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/take-order-page/hero-tablet@2x.jpg');
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url('../images/tablet/take-order-page/hero-tablet@3x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+    height: 400px;
+    margin-right: 32px;
+    margin-bottom: 0;
+    background-image: url('../images/desktop/take-order-page/hero-main-desktop@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/take-order-page/hero-main-desktop@2x.jpg');
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url('../images/desktop/take-order-page/hero-main-desktop@3x.jpg');
+    }
+  }
+}
+
+.hero-section {
+  display: block;
+}
+
+.hero-list {
+  display: block;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 60px;
+  }
+}
+
+.hero-item {
+  width: 100%;
+  // max-width: 280px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2b2b2b;
+  @media screen and (min-width: 768px) {
+    max-width: 295px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2b2b2b;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 520px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #2b2b2b;
+  }
+}
+
+.hero-item:not(:last-child) {
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 24px;
+  }
+}
+
+.hero-pictures {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.hero-picture-1 {
+  width: 203px;
+  height: 203px;
+  background-image: url('../images/desktop/take-order-page/hero-sec-1-desktop@3x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 72px 0px 0px 72px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/desktop/take-order-page/hero-sec-1-desktop@2x.jpg');
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url('../images/desktop/take-order-page/hero-sec-1-desktop@3x.jpg');
+  }
+}
+.hero-picture-2 {
+  width: 203px;
+  height: 203px;
+  background-image: url('../images/desktop/take-order-page/hero-sec-2-desktop@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 72px 0px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/desktop/take-order-page/hero-sec-2-desktop@2x.jpg');
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url('../images/desktop/take-order-page/hero-sec-2-desktop@3x.jpg');
+  }
+}
+.hero-picture-3 {
+  width: 203px;
+  height: 203px;
+  background-image: url('../images/desktop/take-order-page/hero-sec-3-desktop@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 0px 72px 0px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/desktop/take-order-page/hero-sec-3-desktop@2x.jpg');
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url('../images/desktop/take-order-page/hero-sec-3-desktop@3x.jpg');
+  }
+}

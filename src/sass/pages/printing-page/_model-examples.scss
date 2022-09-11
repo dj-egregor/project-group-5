@@ -1,0 +1,85 @@
+.model-examples {
+  padding-top: 40px;
+  padding-bottom: 38px;
+
+  @include tablet {
+    padding-top: 34px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.model-examples__title {
+  margin-bottom: 16px;
+  font-family: 'Cera Pro Bold';
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: $secondary-color-text;
+
+  @include tablet {
+    font-size: 36px;
+  }
+
+  @include desktop {
+    margin-bottom: 24px;
+    font-size: 48px;
+  }
+}
+
+.model-examples__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 20px;
+}
+
+.model-examples__item {
+  @include centered-flex;
+
+  flex-direction: column;
+  height: 158px;
+  width: calc((100% - 1 * 20px) / 2);
+  box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+
+  @include tablet {
+    width: calc((100% - 3 * 32px) / 4);
+    height: 182px;
+  }
+
+  @include desktop {
+    height: 382px;
+  }
+}
+
+.model-examples__text {
+  margin-top: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  text-transform: uppercase;
+  color: $secondary-color-text;
+
+  &:last-child {
+    margin-top: 9px;
+
+    @include tablet {
+      margin-top: 11px;
+    }
+  }
+
+  @include tablet {
+    margin-top: 19px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
