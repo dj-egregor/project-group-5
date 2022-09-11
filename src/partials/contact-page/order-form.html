@@ -1,0 +1,28 @@
+<form class="order-form">
+  <h1 class="order-form__title">ЗВ'ЯЖІТЬСЯ З НАМИ</h1>
+
+  <div class="order-form__field">
+    <label for="name">Ім'я</label>
+    <input type="text" name="name" id="name" />
+    
+  </div>
+
+  <div class="order-form__field">
+    <label for="mail">Email</label>
+    <input type="email" name="mail" id="mail" />
+  </div>
+
+  <div class="order-form__message">
+    <label for="comment">Повідомлення</label>
+    <input
+      name="comment"
+      id="comment"
+      placeholder="Залишіть своє повідомлення"
+    ></input>
+    <svg class="order-form__icon" width="22" height=20">
+      <use href="/src/images/icons.svg#icon-paper-clip"></use>
+    </svg>
+    <p class="order-form__instruction">*Прикріпіть зображення/креслення/STL/Obj/,<br class="br">CAD-модель</p>
+  </div>
+  <button type="submit" class="button-send">Відправити</button>
+</form>
