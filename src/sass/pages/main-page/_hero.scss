@@ -10,10 +10,10 @@
 }
 .main-hero__container {
   @include tablet {
-    width: 400px;
+    width: 464px;
   }
   @include desktop {
-    width: 672px;
+    width: 737px;
   }
 }
 
@@ -75,6 +75,7 @@
 .main-hero__item {
   flex-basis: calc((100% - 2 * 15px) / 3);
   overflow: hidden;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
   @include tablet {
     flex-basis: calc((100% - 2 * 29px) / 3);
   }
