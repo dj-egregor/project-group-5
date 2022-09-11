@@ -20,8 +20,9 @@
 
 .contact-hero__title {
   margin-bottom: 16px;
-  
-  @include font (700, 24px, 1.25, null);
+
+  // @include font (700, 24px, 1.25, null);
+  @include font(24px, 700, 1.25, null);
   text-transform: uppercase;
   color: $secondary-color-text;
 
@@ -82,14 +83,16 @@
 }
 
 .contact-hero__text {
-  @include font (400, 16px, 1.25, null);
+  // @include font(400, 16px, 1.25, null);
+  @include font(16px, 400, 1.25, null);
 
   &:not(:last-child) {
     margin-bottom: 16px;
   }
 
   @include desktop {
-    @include font (300, 18px, 1.28, null);
+    // @include font(300, 18px, 1.28, null);
+    @include font(18px, 300, 1.28, null);
   }
 
   &:last-child {
