@@ -1,4 +1,4 @@
-.rer {
+.wrapper {
   position: absolute;
   top: 6vh;
   right: -2vw;
@@ -40,13 +40,13 @@
   }
 }
 
-.rer:not(.is-open) {
+.wrapper:not(.is-open) {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.rer.is-open {
+.wrapper.is-open {
   transform: translateX(0);
 }
 
