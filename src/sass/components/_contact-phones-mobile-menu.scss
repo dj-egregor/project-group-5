@@ -1,27 +1,53 @@
-.modal-phone {
+.rer {
   position: absolute;
-  // top треба буде коригувати при позиціюванні
-  top: 20px;
+  top: 6vh;
+  right: -2vw;
+  opacity: 1;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: 340px) {
+    top: 6vh;
+    right: 7vw;
+  }
+}
+
+.modal-phone {
+  position: relative;
   width: 162px;
   height: 82px;
   padding: 16px 6px;
   border-radius: 2px;
-  //  background-color треба замынити на #FFFFFF;
-  background-color: aqua;
+  background-color: #ffffff;
+
   &::after {
     position: absolute;
+    z-index: -1;
+    content: '';
+
     top: -12px;
     left: 50%;
+    margin: auto;
     transform: translateX(-50%);
-    content: '';
     width: 38px;
     height: 38px;
     border-radius: 2px;
-    //  background-color треба замынити на #FFFFFF;
-    background-color: aqua;
+
+    background-color: #ffffff;
     rotate: 45deg;
-    z-index: -1;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
   }
+}
+
+.rer:not(.is-open) {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.rer.is-open {
+  transform: translateX(0);
 }
 
 .mobile-phones {
