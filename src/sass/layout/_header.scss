@@ -119,5 +119,50 @@
     text-align: center;
     letter-spacing: 0.01em;
     color: #2b2b2b;
+    @include animation(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+    &:hover,
+    &:focus {
+      color: #2196f3;
+      font-weight: 700;
+    }
   }
+
+  .after::after {
+    content: '';
+    width: 50px;
+    height: 40px;
+    background-color: #008cef;
+  }
+
+  &__item {
+    position: relative;
+  }
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  width: 130px;
+  z-index: 10;
+  margin-top: 4px;
+  text-align: center;
+
+  &__item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      color: #2196f3;
+      font-weight: 700;
+    }
+  }
+}
+
+.nav-menu__item:hover .submenu {
+  display: block;
 }

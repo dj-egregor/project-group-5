@@ -81,6 +81,10 @@
   }
 }
 
+.address {
+  font-style: inherit;
+}
+
 .footer-address {
   @media screen and (min-width: 768px) {
     text-align: right;
