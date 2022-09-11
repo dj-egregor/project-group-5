@@ -1,18 +1,32 @@
 .modal-main {
-  position: relative;
-  background-color: #ffffff;
-  width: 320px;
-  height: 586px;
+  position: fixed;
+  top: 73px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
   padding: 20px;
-  margin: 0 auto;
-  overflow: hidden;
+  background-color: #ffffff;
+
+  opacity: 1;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header {
-  position: static;
-  display: flex;
-  height: 32px;
-  }
+.modal-main:not(.is-open) {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal-main.is-open {
+  transform: translateX(0);
+}
 
 .modal-main__menu {
   padding-top: 60px;
@@ -72,21 +86,7 @@
   height: 74px;
   background-color: #ffffff;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 35px 35px 0px;
-}
-
-.one {
-  top: 0;
-  left: 0;
-}
-
-.two {
-  top: 0;
-  right: 0;
-  transform: rotate(180deg);
-}
-
-.three {
   top: 294px;
   left: -29px;
+  border-radius: 0px 0px 35px 0px;
 }

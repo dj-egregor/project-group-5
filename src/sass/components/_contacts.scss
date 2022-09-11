@@ -26,11 +26,14 @@
 
 .contacts__title {
   margin-bottom: 8px;
-  font-family: 'Cera Pro Bold';
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.28;
+  
+  @include font (700, 18px, 1.28, null);
+  text-transform: uppercase;
   color: $secondary-color-text;
+
+  &--capitalize {
+    text-transform: none;
+  }
 
   @include tablet {
     font-size: 24px;
@@ -45,6 +48,7 @@
 
 .wrap-tel {
   margin-bottom: 24px;
+  
   @include tablet {
     margin-bottom: 0;
     margin-right: 25px;
@@ -63,9 +67,11 @@
 }
 .wrap-mail {
   margin-bottom: 24px;
+
   @include tablet {
     margin-bottom: 0;
   }
+
   @include desktop {
     margin-bottom: 30px;
   }
@@ -84,7 +90,7 @@
     text-align: right;
   }
   @include desktop {
-    margin-bottom: 52.58px;
+    margin-bottom: 68px;
   }
 
   &--left {
@@ -97,15 +103,17 @@
 
 .contacts__item {
   &:not(:last-child) {
+    margin-bottom: 8px;
+
+    @include desktop {
     margin-bottom: 18px;
+  }
   }
 }
 .contacts__link {
   @include animation(color, null, null);
+  @include font (400, 16px, 1.25, null);
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   color: inherit;
 
   &:hover,
@@ -120,12 +128,12 @@
 }
 
 .contacts__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font (400, 16px, 1.25, null);
 
   @include desktop {
     display: inline;
+    font-size: 18px;
+    line-height: 1.11;
   }
 }
 

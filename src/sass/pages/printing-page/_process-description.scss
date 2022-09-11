@@ -54,26 +54,32 @@
   }
 }
 .process-description__text {
-  @include font(16px, 300, 20px, null);
+  // @include font(300, 16px, 1.25, null);
+  @include font(16px, 300, 1.25, null);
   color: $primary-color-text;
   @include tablet {
-    @include font(16px, 400, 20px, null);
+    // @include font(400, 16px, 1.25, null);
+    @include font(16px, 400, 1.25, null);
   }
   @include desktop {
-    @include font(18px, 300, 23px, null);
+    // @include font(300, 18px, 1.27, null);
+    @include font(18px, 300, 1.27, null);
   }
 }
 .process-description__text--part {
-  @include font(16px, 700, 20px, null);
+  // @include font(700, 16px, 1.25, null);
+  @include font(16px, 700, 1.25, null);
   text-transform: uppercase;
   color: $secondary-color-text;
   @include desktop {
-    @include font(18px, 700, 23px, null);
+    // @include font(700, 18px, 1.27, null);
+    @include font(18px, 700, 1.27, null);
   }
 }
 .process-description__link {
   display: block;
-  @include font(16px, 700, 24px, 0.01em);
+  // @include font(700, 16px, 1.5, 0.01em);
+  @include font(16px, 700, 1.5, 0.01em);
   text-align: center;
   text-transform: uppercase;
   color: $secondary-color-text;
