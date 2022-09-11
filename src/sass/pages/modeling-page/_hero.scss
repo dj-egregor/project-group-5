@@ -9,8 +9,6 @@
 
   &__main-title {
     @include font(24px, 700, 30px, 1.25);
-    font-family: 'Cera Pro Bold';
-    font-style: normal;
     color: $secondary-color-text;
     text-transform: uppercase;
 
@@ -24,22 +22,14 @@
     }
   }
   &__text {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 300;
-    letter-spacing: 1.28;
-
-    font-family: 'Cera Pro Light';
-    font-style: normal;
+    @include font(16px, 300, 20px, 1.28);
     color: $primary-color-text;
 
     @include tablet {
       max-width: 515px;
     }
     @include desktop {
-      font-size: 18px;
-      line-height: 23px;
-      font-weight: 300;
+      @include font(18px, 300, 23px, 1.28);
 
       max-width: 100%;
       display: flex;

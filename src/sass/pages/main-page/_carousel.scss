@@ -12,12 +12,13 @@
   // visibility: visible;
   //   transition: opacity $animation, visibility $animation;
 }
-// .is-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-//   //   transition: opacity $animationDelay, visibility $animationDelay;
-// }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  //   transition: opacity $animationDelay, visibility $animationDelay;
+}
 
 .carousel__wrap {
   position: absolute;

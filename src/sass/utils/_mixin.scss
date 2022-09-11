@@ -1,4 +1,4 @@
-@mixin font($fw, $fs, $lh, $ls) {
+@mixin font($fs, $fw, $lh, $ls) {
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
@@ -66,7 +66,14 @@
   flex-basis: calc((100% - ($q - 1) * $gp) / $q);
 }
 
-@mixin flex($dsp: flex, $fd: row, $ai: center, $jc: center, $gp: null, $fw: nowrap) {
+@mixin flex(
+  $dsp: flex,
+  $fd: row,
+  $ai: center,
+  $jc: center,
+  $gp: null,
+  $fw: nowrap
+) {
   display: $dsp;
   flex-direction: $fd;
   align-items: $ai;
