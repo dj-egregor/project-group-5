@@ -1,0 +1,198 @@
+.contacts {
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-bottom: 0;
+  }
+}
+
+.contacts__container {
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    display: block;
+    text-align: right;
+  }
+
+  &--left { 
+    @include desktop {
+    display: block;
+    text-align: left;
+  }
+  }
+}
+
+.contacts__title {
+  margin-bottom: 8px;
+  font-family: 'Cera Pro Bold';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.28;
+  color: $secondary-color-text;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  @include desktop {
+    margin-bottom: 18px;
+    font-size: 36px;
+  }
+}
+
+.wrap-tel {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
+  @include desktop {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  &--left {
+    @include desktop {
+    margin-bottom: 68px;
+    margin-right: 0;
+  }
+  }
+}
+.wrap-mail {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+  @include desktop {
+    margin-bottom: 30px;
+  }
+
+  &--left {
+    @include desktop {
+    margin-bottom: 68px;
+    margin-right: 0;
+  }
+  }
+}
+
+.wrap-hour {
+  @include tablet {
+    margin-left: auto;
+    text-align: right;
+  }
+  @include desktop {
+    margin-bottom: 52.58px;
+  }
+
+  &--left {
+    @include desktop {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  }
+}
+
+.contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+.contacts__link {
+  @include animation(color, null, null);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+.contacts__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  @include desktop {
+    display: inline;
+  }
+}
+
+.wrap-mosaic {
+  display: none;
+
+  @include desktop {
+    display: block;
+    width: 437.63px;
+    height: 293.68px;
+    margin-left: auto;
+    position: relative;
+  }
+}
+
+.wrap-mosaic__photo {
+  width: 437.63px;
+  height: 293.68px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.wrap-mosaic__box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  mix-blend-mode: lighten;
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+}
+
+.wrap-mosaic__box div {
+  background: #000;
+  width: 138.42px;
+  height: 138.42px;
+  overflow: hidden;
+}
+
+.wrap-mosaic {
+  &__1 {
+    border-radius: 0px 72px 0px 0px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+  }
+  &__2 {
+    border-radius: 0px 0px 0px 72px;
+    margin-right: 9px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+  }
+  &__3 {
+    border-radius: 72px 0px;
+    margin-bottom: 11px;
+  }
+  &__4 {
+    border-radius: 0px 72px;
+    margin-right: 5px;
+    margin-left: 2px;
+  }
+  &__5 {
+    border-radius: 72px;
+    margin-right: 6px;
+  }
+  &__6 {
+    border-radius: 0px 0px 72px 0px;
+    margin-bottom: 10px;
+  }
+}
