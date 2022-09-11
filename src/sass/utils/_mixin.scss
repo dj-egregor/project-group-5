@@ -1,24 +1,24 @@
-// @mixin font($fw, $fs, $lh, $ls) {
-//   font-weight: $fw;
-//   font-size: $fs;
-//   line-height: $lh;
-//   letter-spacing: $ls;
-// }
-
-@mixin font($fs: false, $fw: false, $lh: false, $ls: false) {
-  @if $fs {
-    font-size: $fs;
-  }
-  @if $fw {
-    font-weight: $fw;
-  }
-  @if $lh {
-    line-height: calc($lh / $fs);
-  }
-  @if $ls {
-    letter-spacing: $ls;
-  }
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
 }
+
+// @mixin font($fs: false, $fw: false, $lh: false, $ls: false) {
+//   @if $fs {
+//     font-size: $fs;
+//   }
+//   @if $fw {
+//     font-weight: $fw;
+//   }
+//   @if $lh {
+//     line-height: calc($lh / $fs);
+//   }
+//   @if $ls {
+//     letter-spacing: $ls;
+//   }
+// }
 
 @mixin retina {
   @media (min-device-pixel-ratio: 2),
