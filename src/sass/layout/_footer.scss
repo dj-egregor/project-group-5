@@ -55,7 +55,8 @@
 }
 
 .footer-menu-link {
-  @include font(16, 400, 1.25, 0.01em);
+  //@include font(16, 400, 1.25, 0.01em);
+  @include font(400, 16, 1.25, 0.01em);
   color: $primary-color-text;
 }
 
@@ -76,7 +77,8 @@
   }
 
   &-link {
-    @include font(16, 400, 1.25, 0.01em);
+    // @include font(16, 400, 1.25, 0.01em);
+    @include font(400, 16, 1.25, 0.01em);
     color: $primary-color-text;
   }
 }
@@ -98,7 +100,8 @@
 }
 
 .address-text {
-  @include font(16, 400, 1.25, 0.01em);
+  // @include font(16, 400, 1.25, 0.01em);
+  @include font(400, 16, 1.25, 0.01em);
   margin-bottom: 8px;
 }
 
@@ -107,7 +110,8 @@
 }
 
 .address-link-mail {
-  @include font(16, 400, 1.25, 0.01em);
+  // @include font(16, 400, 1.25, 0.01em);
+  @include font(400, 16, 1.25, 0.01em);
   color: $secondary-color-text;
 }
 .address-item-tell:not(:last-child) {
@@ -115,6 +119,7 @@
 }
 
 .address-link-tell {
-  @include font(16, 400, 1.25, 0.01em);
+  // @include font(16, 400, 1.25, 0.01em);
+  @include font(400, 16, 1.25, 0.01em);
   color: $secondary-color-text;
 }
