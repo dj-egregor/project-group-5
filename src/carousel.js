@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
     let counter = 0;
     const stepSize = images[0].clientWidth;
     // console.log(stepSize);
-    
+
     slider.style.transform = 'translateX(' = '${-stepSize * counter}px)';
 
     right.addEventListener('click'), () => {
