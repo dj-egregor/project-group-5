@@ -1,34 +1,28 @@
 .order-button {
-  color: $secondary-color-text;
-  font-family: 'Cera Pro';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-
+  margin: 0 auto;
+  padding: 16px 32px;
+  
+  display: block;
   text-align: center;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: $secondary-color-text;
+  @include font(16px, 700, 1.5, 0.1em);
+  
+  cursor: pointer;
 
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  gap: 10px;
-
-  width: 277px;
+  width: 280px;
   height: 56px;
-
-  background: $footer-bgc;
-  box-shadow: -10px -10px 20px $primary-bgc,
-    10px 10px 20px rgba(72, 121, 150, 0.1),
-    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px $primary-bgc;
+  box-sizing: border-box;
+  background: $button-bgc;
+  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
   border-radius: 30.5px;
+
+  @include tablet {
+    text-align: center;
+    
+    @include font(16px, 700, 1.5, 0.1em);
+  }
+    @include desktop {
+    @include font(16px, 700, 1.5, 0.1em);
+  }
 }

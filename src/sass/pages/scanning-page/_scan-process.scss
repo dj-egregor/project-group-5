@@ -1,3 +1,11 @@
+.scan-process {
+  padding-bottom: 60px;
+  @include desktop {
+    padding-bottom: 80px;
+  }
+} 
+
+
 .scan-process__title {
   margin-bottom: 16px;
 
@@ -30,10 +38,17 @@
   flex-wrap: wrap;
   row-gap: 16px;
   column-gap: 20px;
+  margin-bottom: 60px;
 
+  @include desktop {
+    margin-bottom: 80px;
+  }
+  
   @include tablet {
     column-gap: 32px;
+    
   }
+  
 }
 
 .scan-process__item {
@@ -236,18 +251,13 @@
 
 
 .scan-process__text {
-  font-family: 'Cera Pro';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-
+  width: 100%;
+  @include font(14px, 400, 1.29, null);
   color: $secondary-color-text;
 
   @include desktop {
-    font-size: 18px;
-    font-weight: 300px;
-    line-height: 1.28;
+    @include font(18px, 300, 1.28, null);
+    
     padding: 0 80px;
   }
 }
