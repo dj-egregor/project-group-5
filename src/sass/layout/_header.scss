@@ -17,6 +17,19 @@
   @media screen and (min-width: 768px) {
     margin-right: 211px;
   }
+
+  &__img {
+    width: 101px;
+    height: 25px;
+    @media screen and (min-width: 768px) {
+      width: 125px;
+      height: 31px;
+    }
+    @media screen and (min-width: 1140px) {
+      width: 192px;
+      height: 48px;
+    }
+  }
 }
 
 .menu-open {
@@ -31,6 +44,7 @@
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
   border-radius: 2px;
+  cursor: pointer;
 
   @media screen and (min-width: 1440px) {
     display: none;
@@ -74,6 +88,7 @@
   @include font(14px, 700, 1.29, 0.01em);
   font-family: 'Caviar Dreams', sans-serif;
   border: none;
+  cursor: pointer;
   color: #bdbdbd;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
@@ -81,6 +96,14 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  &_item {
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
 }
 
 .tablet-contacts {
@@ -136,6 +159,66 @@
   @media screen and (min-width: 768px) {
     gap: 38px;
   }
+}
+
+.nav-ring__tel {
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  top: 45px;
+  right: -45px;
+  opacity: 1;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.modal-phone {
+  position: relative;
+  width: 162px;
+  height: 82px;
+  padding: 16px 6px;
+  border-radius: 2px;
+  background-color: $primary-bgc;
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: -12px;
+    left: 50%;
+    margin: auto;
+    transform: translateX(-50%);
+    width: 38px;
+    height: 38px;
+    border-radius: 2px;
+    background-color: $primary-bgc;
+    rotate: 45deg;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+.wrapper:not(.is-open) {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.wrapper.is-open {
+  transform: translateX(0);
+}
+.mobile-phones {
+  list-style: none;
+}
+.mobile-phones__list {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.mobile-phones__link {
+  text-decoration: none;
+  @include font(16px, 400, 1.25, 0.01em);
+  color: $primary-color-text;
 }
 
 .desktop-nav {
