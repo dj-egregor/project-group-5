@@ -15,18 +15,18 @@
 }
 
 .order-form__title {
-  @include font(18, 700, 1.28, null);
+  text-align: center;
+  justify-content: center;
+  @include font(18px, 700, 1.28, null);
 
   color: $secondary-color-text;
 
   padding-bottom: 16px;
   @include tablet {
-    text-align: center;
-    @include font(24, 700, 1.28, null);
+    @include font(24px, 700, 1.28, null);
   }
   @include desktop {
-    text-align: left;
-    @include font(36, 700, 1.28, null);
+    @include font(36px, 700, 1.28, null);
   }
 }
 
@@ -42,6 +42,10 @@
   @include desktop {
     width: 555px;
   }
+}
+
+.last {
+  margin-bottom: 44px;
 }
 
 .order-form__field input {
@@ -62,11 +66,11 @@
 
   &:focus + .order-form__field-label {
     transform: translateY(-34px);
-    @include font(14, 400, 1.25, null);
+    @include font(14px, 400, 1.25, null);
   }
   &:not(:placeholder-shown) + .order-form__field-label {
     transform: translateY(-34px);
-    @include font(14, 400, 1.25, null);
+    @include font(14px, 400, 1.25, null);
   }
 }
 
@@ -78,10 +82,10 @@
   transition: transform 250ms linear;
 
   color: $primary-color-text;
-  @include font(16, 400, 1.25, null);
+  @include font(16px, 400, 1.25, null);
 
   @include desktop {
-    @include font(18, 400, 1.25, null);
+    @include font(18px, 400, 1.25, null);
   }
 }
 
@@ -90,7 +94,7 @@
   width: 280px;
   height: 287px;
   margin-bottom: 40px;
-  margin-top: 44px;
+
   @include tablet {
     width: 400px;
   }
@@ -101,7 +105,7 @@
 
 .order-form__message label {
   @include desktop {
-    @include font(18, 400, 1.25, null);
+    @include font(18px, 400, 1.25, null);
   }
 }
 
@@ -124,7 +128,7 @@
 }
 
 .order-form__message input::placeholder {
-  @include font(16, 400, 1.25, null);
+  @include font(16px, 400, 1.25, null);
 
   position: absolute;
   top: 22px;
@@ -133,7 +137,7 @@
   margin: 0;
 
   @include desktop {
-    @include font(18, 400, 1.25, null);
+    @include font(18px, 400, 1.25, null);
   }
 }
 
@@ -144,11 +148,11 @@
   right: 23px;
 }
 .order-form__instruction {
-  @include font(16, 400, 1.25, null);
+  @include font(16px, 400, 1.25, null);
 
   color: $placeholder-color;
   @include desktop {
-    @include font(18, 400, 1.25, null);
+    @include font(18px, 400, 1.25, null);
   }
 }
 
@@ -162,7 +166,7 @@
   width: 280px;
   height: 56px;
 
-  @include font(16, 700, 1.25, null);
+  @include font(16px, 700, 1.25, null);
   color: $secondary-color-text;
 
   outline: none;
