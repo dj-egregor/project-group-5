@@ -10,10 +10,10 @@
 }
 .main-hero__container {
   @include tablet {
-    width: 464px;
+    width: 440px;
   }
   @include desktop {
-    width: 737px;
+    width: 736px;
   }
 }
 

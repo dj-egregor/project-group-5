@@ -12,13 +12,12 @@
   visibility: visible;
   transition: opacity 250ms linear, visibility 250ms linear;
 }
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 250ms linear, visibility 250ms linear;
+.backdrop.is-hidden {
+  // opacity: 0;
+  // visibility: hidden;
+  // pointer-events: none;
+  // transition: opacity 250ms linear, visibility 250ms linear;
 }
-
 
 .is-hidden {
   opacity: 0;
@@ -26,7 +25,6 @@
   pointer-events: none;
   //   transition: opacity $animationDelay, visibility $animationDelay;
 }
-
 
 .carousel__wrap {
   position: absolute;
