@@ -1,10 +1,10 @@
 (() => {
   const refs = {
     openMenuBtn: document.querySelector('.more-photo__img'),
-    closeMenuBtn: document.querySelector('.carousel__img'),
+    closeMenuBtn: document.querySelector('.btn-close--photo'),
     menu: document.querySelector('.backdrop'),
     body: document.querySelector('body'),
-    menuList: document.querySelector('.carousel__wrap'),
+    menuList: document.querySelectorAll('.more-photo__list'),
   };
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
