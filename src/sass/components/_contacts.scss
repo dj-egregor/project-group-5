@@ -7,13 +7,24 @@
 }
 
 .contacts__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include mobile {
+    max-width: 480px;
+  }
+
   @include tablet {
     display: flex;
+    max-width: 768px;
+    padding: 0 32px;
   }
 
   @include desktop {
     display: block;
     text-align: right;
+    padding: 0;
   }
 
   &--left {
