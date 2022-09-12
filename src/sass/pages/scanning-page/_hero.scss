@@ -150,7 +150,12 @@
     max-width: 515px;
     font-size: 18px;
     display: inline-block;
+    padding: 0;
   }
+}
+
+.first {
+  padding-bottom: 16px;
 }
 
 .new-row {
