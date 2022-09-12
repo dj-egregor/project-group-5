@@ -27,13 +27,11 @@
 
 .order-form {
   max-width: 280px;
-  justify-content: center;
-
-  margin: auto;
 
   @include tablet {
     max-width: 400px;
     position: relative;
+    margin: auto;
   }
   @include desktop {
     min-width: 555px;
@@ -42,8 +40,6 @@
 
 .order-form__title {
   margin-bottom: 28px;
-  text-align: center;
-  justify-content: center;
   @include font(18px, 700, 1.28, null);
   text-transform: uppercase;
   color: $secondary-color-text;
@@ -51,6 +47,7 @@
   @include tablet {
     @include font(24px, 700, 1.28, null);
     margin-bottom: 35px;
+    text-align: center;
   }
   @include desktop {
     @include font(36px, 700, 1.28, null);
@@ -120,13 +117,13 @@
 .order-form__message {
   position: relative;
   width: 280px;
-  height: 287px;
   margin-bottom: 40px;
 
   @include tablet {
     width: 400px;
   }
   @include desktop {
+    margin-bottom: 24px;
     width: 555px;
   }
 }
@@ -147,6 +144,7 @@
   border-radius: 50px 0px;
   outline: none;
   padding-left: 20px;
+
   @include tablet {
     width: 400px;
   }
@@ -172,9 +170,18 @@
 .order-form__icon {
   position: absolute;
   fill: $placeholder-color;
-  bottom: -40px;
+  bottom: 80px;
   right: 23px;
+
+  @include tablet {
+    bottom: 60px;
+  }
+
+  @include desktop {
+    bottom: 40px;
+  }
 }
+
 .order-form__instruction {
   @include font(16px, 400, 1.25, null);
 
