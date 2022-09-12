@@ -77,24 +77,43 @@
       </nav>
     </div>
     <div class="nav-right">
-      <button
-        type="button"
-        class="tel-open js-open-modal-phone js-close-modal-phone"
-      >
-        <svg
-          class="tel-open__icon"
-          width="24"
-          height="24"
-          aria-label="Кнопка відображення контактів"
+      <div class="nav-ring__tel">
+        <button
+          type="button"
+          class="tel-open js-open-modal-phone js-close-modal-phone"
         >
-          <use href="./images/icons.svg#icon-icon-tel"></use>
-        </svg>
-      </button>
+          <svg
+            class="tel-open__icon"
+            width="24"
+            height="24"
+            aria-label="Кнопка відображення контактів"
+          >
+            <use href="./images/icons.svg#icon-icon-tel"></use>
+          </svg>
+        </button>
+        <div class="wrapper js-modal-phone-container">
+          <div class="modal-phone">
+            <ul class="mobile-phones">
+              <li class="mobile-phones__list">
+                <a class="mobile-phones__link" href="tel:+380936432288">
+                  +38 (093) 643 22 88
+                </a>
+              </li>
+              <li class="mobile-phones__list">
+                <a class="mobile-phones__link" href="tel:+380503454423">
+                  +38 (050) 345 44 23
+                </a>
+              </li>
+            </ul>
+            <div class="triangle"></div>
+          </div>
+        </div>
+      </div>
 
       <select class="lang">
-        <option value="ENG">ENG</option>
-        <option value="RUS">RUS</option>
-        <option value="UKR" selected>UKR</option>
+        <option value="ENG" class="lang__item">ENG</option>
+        <option value="RUS" class="lang__item">RUS</option>
+        <option value="UKR" class="lang__item" selected>UKR</option>
       </select>
 
       <div class="tablet-contacts">
