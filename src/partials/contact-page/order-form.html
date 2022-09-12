@@ -31,12 +31,18 @@
           id="comment"
           placeholder="Залишіть своє повідомлення"
         ></textarea>
-        <svg class="order-form__icon" width="22" height="20">
+        <!-- <svg class="order-form__icon" width="22" height="20">
           <use href="/src/images/icons.svg#icon-paper-clip"></use>
-        </svg>
+        </svg> -->
         <p class="order-form__instruction">
-          *Прикріпіть зображення/креслення/STL/Obj/,<br class="br" />CAD-модель
+          *Прикріпіть зображення/креслення/STL/Obj/<br class="br" />CAD-модель
         </p>
+        <label for="file-select">
+          <svg class="add-file-icon" width="22" height="20">
+            <use href="/src/images/icons.svg#icon-paper-clip"></use>
+          </svg>
+        </label>
+        <input class="select-file" type="file" name="file" id="file-select" />
       </div>
       <button type="submit" class="button-send">Відправити</button>
     </form>
