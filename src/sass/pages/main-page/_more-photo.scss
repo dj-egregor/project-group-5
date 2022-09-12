@@ -1,12 +1,11 @@
 .more-photo {
-  padding-top: 40px;
   padding-bottom: 60px;
+
   @include tablet {
-    padding-top: 60px;
     padding-bottom: 80px;
   }
+
   @include desktop {
-    padding-top: 120px;
     padding-bottom: 156px;
   }
 }

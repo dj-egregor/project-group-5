@@ -1,4 +1,12 @@
 .gallery {
+  padding-bottom: 40px;
+
+  @include tablet {
+    padding-bottom: 60px;
+  }
+  @include desktop {
+    padding-bottom: 120px;
+  }
 }
 .gallery__container {
   @include desktop {
