@@ -232,6 +232,11 @@
   gap: 56px;
 
   &__icon {
+    position: absolute;
+    bottom: 25%;
+    left: 110%;
+    transform: rotate(180deg);
+
     fill: $header-triangle-color;
   }
 
@@ -262,7 +267,8 @@
   top: 100%;
   left: -50%;
   width: 140px;
-  z-index: 10;
+  //z-index: 10;
+  z-index: -1;
   margin-top: 4px;
   text-align: center;
 
@@ -285,4 +291,20 @@
 
 .nav-menu__item:hover .submenu {
   display: block;
+}
+
+.btn:hover .nav-menu__icon {
+  transform: rotate(360deg);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
