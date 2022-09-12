@@ -1,3 +1,30 @@
+.order-section {
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.order-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include mobile {
+    max-width: 480px;
+  }
+
+  @include tablet {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
 .order-form {
   max-width: 280px;
   justify-content: center;
@@ -10,23 +37,24 @@
   }
   @include desktop {
     min-width: 555px;
-    margin-top: 10px;
   }
 }
 
 .order-form__title {
+  margin-bottom: 28px;
   text-align: center;
   justify-content: center;
   @include font(18px, 700, 1.28, null);
-
+  text-transform: uppercase;
   color: $secondary-color-text;
 
-  padding-bottom: 16px;
   @include tablet {
     @include font(24px, 700, 1.28, null);
+    margin-bottom: 35px;
   }
   @include desktop {
     @include font(36px, 700, 1.28, null);
+    margin-bottom: 44px;
   }
 }
 
@@ -184,7 +212,7 @@
 
   @include tablet {
     max-width: 177px;
-    position: absolute;
-    right: 0;
+    @include centered-flex;
+    margin-left: auto;
   }
 }
