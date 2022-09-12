@@ -1,31 +1,44 @@
 <section class="order-section">
-<div class="order-container">
-<h1 class="order-form__title">Зв'яжіться з нами</h1>
-<form class="order-form">
-  <div class="order-form__field">
-    <input  type="text"  class="order-form__field-input" name="name" placeholder=" " id="name" />
-    <label   for="name" class="order-form__field-label">Ім'я</label>
-    
-  </div>
+  <div class="order-container">
+    <h1 class="order-form__title">Зв'яжіться з нами</h1>
+    <form class="order-form">
+      <div class="order-form__field">
+        <input
+          type="text"
+          class="order-form__field-input"
+          name="name"
+          placeholder=" "
+          id="name"
+        />
+        <label for="name" class="order-form__field-label">Ім'я</label>
+      </div>
 
-  <div class="order-form__field last">
-    <input  type="email" class="order-form__field-input"  name="mail" placeholder=" " id="mail" />
-    <label  for="mail" class="order-form__field-label">Email</label>
-  </div>
+      <div class="order-form__field last">
+        <input
+          type="email"
+          class="order-form__field-input"
+          name="mail"
+          placeholder=" "
+          id="mail"
+        />
+        <label for="mail" class="order-form__field-label">Email</label>
+      </div>
 
-  <div class="order-form__message">
-    <label for="comment">Повідомлення</label>
-    <input
-      name="comment"
-      id="comment"
-      placeholder="Залишіть своє повідомлення"
-    ></input>
-    <svg class="order-form__icon" width="22" height="20">
-      <use href="/src/images/icons.svg#icon-paper-clip"></use>
-    </svg>
-    <p class="order-form__instruction">*Прикріпіть зображення/креслення/STL/Obj/<br class="br">CAD-модель</p>
+      <div class="order-form__message">
+        <label for="comment">Повідомлення</label>
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Залишіть своє повідомлення"
+        ></textarea>
+        <svg class="order-form__icon" width="22" height="20">
+          <use href="/src/images/icons.svg#icon-paper-clip"></use>
+        </svg>
+        <p class="order-form__instruction">
+          *Прикріпіть зображення/креслення/STL/Obj/,<br class="br" />CAD-модель
+        </p>
+      </div>
+      <button type="submit" class="button-send">Відправити</button>
+    </form>
   </div>
-  <button type="submit" class="button-send">Відправити</button>
-</form>
-</div>
 </section>
