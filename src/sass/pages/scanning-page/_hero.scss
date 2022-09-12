@@ -1,4 +1,7 @@
 .section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   @include desktop {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -6,7 +9,9 @@
 }
 
 .scanning-hero__container {
-  padding-left: 149px;
+  @include desktop {
+    padding-left: 149px;
+  }
 }
 
 .scanning-hero__title {
