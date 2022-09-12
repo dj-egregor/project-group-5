@@ -60,6 +60,11 @@
   height: 44px;
   position: relative;
   margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid $secondary-color-text;
+  appearance: none; /* remove arrow        */
+  -webkit-appearance: none; /* remove arrow Chrome */
+  -moz-appearance: none; /* remove arrow FF     */
 
   @include tablet {
     width: 400px;
