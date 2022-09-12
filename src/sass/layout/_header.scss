@@ -231,6 +231,10 @@
   display: flex;
   gap: 56px;
 
+  &__icon {
+    fill: $header-triangle-color;
+  }
+
   &__link {
     position: relative;
     @include font(18px, null, 1.17, 0.01em);
@@ -242,16 +246,6 @@
     &:hover,
     &:focus {
       color: $accent-color;
-    }
-    &--submenu::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      margin-left: 4px;
-      border: solid transparent;
-      border-top: solid $accent-color;
-      width: 10px;
-      height: 4px;
     }
   }
 
