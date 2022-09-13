@@ -65,6 +65,25 @@
   }
 }
 
+.menu-open .menu-open__close {
+  display: block;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+.menu-open.cross .menu-open__close {
+  display: none;
+}
+.menu-open.cross .menu-open__open {
+  display: block;
+}
+.menu-open .menu-open__open {
+  display: none;
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+}
+
 .tel-open {
   padding-bottom: 2px;
   padding-top: 2px;
@@ -212,6 +231,9 @@
 }
 .wrapper:not(.is-open) {
   display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 .wrapper.is-open {
   transform: translateX(0);

@@ -1,8 +1,6 @@
 <header class="header">
   <div class="container header-container">
-
     <a href="./index.html" class="logo">
-
       <svg
         class="logo__img"
         width="101"
@@ -32,14 +30,25 @@
       </svg>
     </a>
 
-    <button type="button" class="menu-open js-open-menu js-close-menu">
+    <button
+      type="button"
+      menu-mobile-switch
+      class="menu-open js-open-menu js-close-menu cross"
+    >
       <svg
         class="menu-open__icon"
         width="32"
         height="32"
         aria-label="Кнопка виклику мобільного меню"
       >
-        <use href="./images/icons.svg#icon-burger"></use>
+        <use
+          class="menu-open__open"
+          href="./images/icons.svg#icon-burger"
+        ></use>
+        <use
+          class="menu-open__close"
+          href="./images/icons.svg#icon-close-window"
+        ></use>
       </svg>
     </button>
     <div class="desktop-nav">
