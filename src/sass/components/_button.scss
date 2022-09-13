@@ -1,28 +1,35 @@
 .order-button {
   margin: 0 auto;
   padding: 16px 32px;
-  
+
   display: block;
   text-align: center;
   text-transform: uppercase;
   color: $secondary-color-text;
   @include font(16px, 700, 1.5, 0.1em);
-  
+
   cursor: pointer;
 
   width: 280px;
   height: 56px;
   box-sizing: border-box;
   background: $button-bgc;
-  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
   border-radius: 30.5px;
 
   @include tablet {
     text-align: center;
-    
+
     @include font(16px, 700, 1.5, 0.1em);
   }
-    @include desktop {
+  @include desktop {
     @include font(16px, 700, 1.5, 0.1em);
+  }
+  &:focus,
+  :hover {
+    box-shadow: -10px -10px 20px $primary-bgc,
+      10px 10px 20px rgba(16, 27, 34, 0.1), 5px 5px 10px rgba(16, 16, 16, 0.25),
+      -5px -5px 10px $primary-bgc;
   }
 }
