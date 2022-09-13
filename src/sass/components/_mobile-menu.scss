@@ -11,6 +11,15 @@
   padding: 20px;
   background-color: $primary-bgc;
 
+  @include tablet {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 768px;
+    background-image: url('../images/img-bg/tablet/bg-menu-tab-1x.jpg');
+    @include retina {
+      background-image: url('../images/img-bg/tablet/bg-menu-tab-2x.jpg');
+    }
+  }
   opacity: 1;
   transition-property: opacity, visibility;
   transition-duration: 250ms;
