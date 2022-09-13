@@ -212,6 +212,9 @@
 }
 .wrapper:not(.is-open) {
   display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 .wrapper.is-open {
   transform: translateX(0);
@@ -293,9 +296,8 @@
   position: absolute;
   top: 10%;
   left: -40%;
-  z-index: -3;
   border-radius: 0 0 60px 60px;
-  background: #ffffff;
+  background: transparent;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
