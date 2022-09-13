@@ -2,22 +2,26 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
-
+  const btnMobileMenu = document.querySelector('[menu-mobile-switch]');
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
-
+    // console.log('isMenuOpen', isMenuOpen, btnMobileMenu);
+    if (isMenuOpen === true) {
+      btnMobileMenu.classList.add('cross');
+    } else {
+      btnMobileMenu.classList.remove('cross');
+    }
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
   };
-
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
-
+  closeMenuBtn.addEventListener('click', toggleMenu);
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
