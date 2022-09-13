@@ -14,15 +14,6 @@
 .main-hero__container {
   position: relative;
 }
-.main-hero__wrap {
-  margin: 0 auto;
-  @include tablet {
-    width: 440px;
-  }
-  @include desktop {
-    width: 736px;
-  }
-}
 
 .main-hero__title {
   text-align: center;
@@ -43,7 +34,7 @@
     // line-height: 28px;
   }
   @include desktop {
-    // max-width: 630px;
+    max-width: 630px;
     @include font(48px, 400, 56px, null);
     // font-size: 48px;
     // line-height: 56px;
@@ -72,11 +63,11 @@
   margin: 0 auto 32px;
   width: 100%;
   @include tablet {
-    // width: 400px;
+    width: 400px;
     margin-bottom: 60px;
   }
   @include desktop {
-    // width: 672px;
+    width: 672px;
   }
 }
 .main-hero__item {
@@ -106,26 +97,23 @@
     border-radius: 0 72px;
   }
 }
-.main-hero__picture {
+.main-hero__picture,
+.main-hero__img {
+  width: 100%;
   object-fit: cover;
 }
 
-.main-hero__wrap-arrow {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @include tablet {
-    position: absolute;
-    @include centered-flex();
-    left: 74px;
-    top: 220px;
-  }
-  @include desktop {
-    left: 144px;
-    top: 390px;
-  }
-}
 .main-hero__link-arrow {
+  scale: 1;
+
+  transition: scale 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(2);
+
+    // transition: scale 250ms $timing-function;
+  }
 }
 .main-hero__icon-arrow {
   fill: #008cef;
