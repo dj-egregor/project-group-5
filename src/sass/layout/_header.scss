@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (min-width: 1440px) {
+  @include desktop {
     padding-top: 40px;
   }
 }
@@ -14,18 +14,18 @@
 .logo {
   margin-right: 23px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 211px;
   }
 
   &__img {
     width: 101px;
     height: 25px;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 125px;
       height: 31px;
     }
-    @media screen and (min-width: 1140px) {
+    @include desktop {
       width: 192px;
       height: 48px;
     }
@@ -37,7 +37,7 @@
   width: 32px;
   height: 32px;
   margin-right: 45px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 99px;
   }
   border: none;
@@ -46,7 +46,7 @@
   border-radius: 2px;
   cursor: pointer;
 
-  @media screen and (min-width: 1440px) {
+  @include desktop {
     display: none;
     @include animation(fill, null, null, 250ms, $timing-function);
   }
@@ -62,7 +62,6 @@
 }
 
 .tel-open {
-  margin-right: 24px;
   padding-bottom: 2px;
   padding-top: 2px;
   background-color: rgba(0, 0, 0, 0);
@@ -77,14 +76,12 @@
     fill: #224fe0;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
 
 .lang {
-  padding-left: 10px;
-  padding-right: 10px;
   @include font(14px, 700, 1.29, 0.01em);
   font-family: 'Caviar Dreams', sans-serif;
   border: none;
@@ -107,9 +104,6 @@
 }
 
 .tablet-contacts {
-  @media screen and (min-width: 768px) {
-    width: 180px;
-  }
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -120,14 +114,14 @@
     &--top {
       padding-top: 10px;
 
-      @media screen and (min-width: 768px) {
+      @include tablet {
         padding-top: 0;
       }
     }
     &--bottom {
       padding-bottom: 10px;
 
-      @media screen and (min-width: 768px) {
+      @include tablet {
         padding-bottom: 0;
       }
     }
@@ -154,21 +148,31 @@
 }
 
 .nav-right {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
 
-  @media screen and (min-width: 768px) {
+.tab-nav-right {
+  @include tablet {
+    display: flex;
     gap: 38px;
   }
 }
 
 .nav-ring__tel {
   position: relative;
+  @include tablet {
+    display: none;
+  }
 }
 
 .wrapper {
   position: absolute;
   top: 45px;
-  right: -45px;
+  right: -65px;
   opacity: 1;
   transition-property: opacity, visibility;
   transition-duration: 250ms;
@@ -199,26 +203,26 @@
   }
 }
 .wrapper:not(.is-open) {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+  display: none;
 }
 .wrapper.is-open {
   transform: translateX(0);
 }
 .mobile-phones {
   list-style: none;
-}
-.mobile-phones__list {
-  margin-bottom: 10px;
-  &:last-child {
-    margin-bottom: 0;
+
+  &__list {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
-}
-.mobile-phones__link {
-  text-decoration: none;
-  @include font(16px, 400, 1.25, 0.01em);
-  color: $primary-color-text;
+
+  &__link {
+    text-decoration: none;
+    @include font(16px, 400, 1.25, 0.01em);
+    color: $primary-color-text;
+  }
 }
 
 .desktop-nav {
@@ -232,6 +236,10 @@
   gap: 56px;
 
   &__icon {
+    position: absolute;
+    bottom: 25%;
+    left: 110%;
+    transform: rotate(180deg);
     fill: $header-triangle-color;
   }
 
@@ -248,6 +256,13 @@
     &:active {
       color: $accent-color;
     }
+
+    &--submenu {
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
   }
 
   &__item {
@@ -257,16 +272,23 @@
   }
 }
 
-.submenu {
+.submenu-wrap {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: -50%;
   width: 140px;
-  z-index: 10;
-  margin-top: 4px;
-  text-align: center;
+  height: 114px;
+  padding-top: 35px;
 
+  position: absolute;
+  top: 10%;
+  left: -40%;
+  z-index: -3;
+  border-radius: 0 0 60px 60px;
+  background: #ffffff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.submenu {
   &__item:not(:last-child) {
     margin-bottom: 4px;
   }
@@ -284,6 +306,24 @@
   }
 }
 
-.nav-menu__item:hover .submenu {
+.nav-menu__item:hover .submenu-wrap,
+.nav-menu__item:focus .submenu-wrap {
   display: block;
+}
+
+.nav-menu__item:hover .nav-menu__icon,
+.nav-menu__item:focus .nav-menu__icon {
+  transform: rotate(360deg);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
