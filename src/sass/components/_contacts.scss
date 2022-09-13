@@ -36,6 +36,10 @@
 }
 
 .contacts__title {
+  @extend %visually-hidden;
+}
+
+.contacts__subtitle {
   margin-bottom: 8px;
 
   @include font(18px, 700, 1.28, null);
