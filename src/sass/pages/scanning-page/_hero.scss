@@ -31,9 +31,7 @@
 }
 
 .scanning-hero__pharagraph-box {
-
   @media screen and (max-width: 767px) {
-    
   }
 
   @include tablet {
@@ -93,7 +91,7 @@
     min-height: 286px;
     position: absolute;
     top: 80%;
-    left: 700px;
+    left: 588px;
     transform: translateY(-50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
