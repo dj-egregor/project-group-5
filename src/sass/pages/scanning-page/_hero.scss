@@ -1,13 +1,21 @@
 .section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   @include desktop {
     padding-top: 100px;
     padding-bottom: 100px;
-    justify-content: center;
   }
 }
+
+.scanning-hero__container {
+  @include desktop {
+    padding-left: 149px;
+  }
+}
+
 .scanning-hero__title {
   @include font(24px, 700, 1.26, null);
-  margin: 0;
   margin-bottom: 16px;
 
   color: $secondary-color-text;
@@ -18,14 +26,10 @@
   @include desktop {
     font-size: 48px;
     margin-bottom: 24px;
-    padding-left: 117px;
   }
 }
 
 .scanning-hero__pharagraph-box {
-  @media screen and (max-width: 767px) {
-  }
-
   @include tablet {
     position: relative;
   }
@@ -33,7 +37,6 @@
   @include desktop {
     max-width: 1440px;
     display: flex;
-    padding-left: 117px;
   }
 }
 
@@ -134,7 +137,7 @@
 
   @include font(16px, 300, 1.25, null);
 
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   color: $primary-color-text;
 
@@ -150,7 +153,12 @@
     max-width: 515px;
     font-size: 18px;
     display: inline-block;
+    margin-bottom: 0;
   }
+}
+
+.first {
+  margin-bottom: 16px;
 }
 
 .new-row {

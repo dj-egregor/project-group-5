@@ -60,6 +60,11 @@
   height: 44px;
   position: relative;
   margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid $secondary-color-text;
+  appearance: none; /* remove arrow        */
+  -webkit-appearance: none; /* remove arrow Chrome */
+  -moz-appearance: none; /* remove arrow FF     */
 
   @include tablet {
     width: 400px;
@@ -88,7 +93,6 @@
   &:focus {
     outline: none;
   }
-
   &:focus + .order-form__field-label {
     transform: translateY(-34px);
     @include font(14px, 400, 1.25, null);
@@ -134,7 +138,7 @@
   }
 }
 
-.order-form__message input {
+.order-form__message textarea {
   box-sizing: border-box;
 
   width: 280px;
@@ -144,7 +148,7 @@
   border-radius: 50px 0px;
   outline: none;
   padding-left: 20px;
-
+  padding-top: 22px;
   @include tablet {
     width: 400px;
   }
@@ -153,7 +157,7 @@
   }
 }
 
-.order-form__message input::placeholder {
+.order-form__message textarea::placeholder {
   @include font(16px, 400, 1.25, null);
 
   position: absolute;
@@ -170,16 +174,8 @@
 .order-form__icon {
   position: absolute;
   fill: $placeholder-color;
-  bottom: 80px;
+  top: 180px;
   right: 23px;
-
-  @include tablet {
-    bottom: 60px;
-  }
-
-  @include desktop {
-    bottom: 40px;
-  }
 }
 
 .order-form__instruction {
@@ -222,4 +218,71 @@
     @include centered-flex;
     margin-left: auto;
   }
+}
+
+.choose-menu:focus {
+  border: none;
+  border-bottom: 1px solid $secondary-color-text;
+  width: 100%;
+  height: 44px;
+
+  @include tablet {
+    width: 400px;
+  }
+  @include desktop {
+    width: 555px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.choose-menu {
+  width: 280px;
+  height: 44px;
+  position: relative;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid $secondary-color-text;
+  appearance: none; /* remove arrow        */
+  -webkit-appearance: none; /* remove arrow Chrome */
+  -moz-appearance: none; /* remove arrow FF     */
+
+  @include tablet {
+    width: 400px;
+  }
+  @include desktop {
+    width: 555px;
+  }
+  @include desktop {
+    @include font(18px, 400, 1.25, null);
+  }
+}
+
+.menu-icon {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.choose-menu-one {
+  position: relative;
+}
+
+.menu-icon-one {
+  position: absolute;
+  bottom: 28px;
+  right: 0px;
+}
+
+.menu-icon-two {
+  position: absolute;
+  bottom: 28px;
+  right: 0px;
+}
+
+.menu-icon-three {
+  position: absolute;
+  bottom: 28px;
+  right: 0px;
 }

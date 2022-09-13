@@ -31,6 +31,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  width: 80%;
   min-width: 236px;
   min-height: 157px;
   transition: transform 250ms linear 250ms, opacity 250ms linear 250ms;
@@ -54,17 +55,48 @@
   display: flex;
   overflow: hidden;
 }
-.carousel__img {
-}
-
-.carousel__icon {
+.carousel__icon-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  @include centered-flex();
   border: none;
   outline: none;
-  fill: #ffffff;
+  background-color: transparent;
 
+  width: 21px;
+  height: 21px;
+
+  @include tablet {
+    width: 42px;
+    height: 42px;
+  }
+  @include desktop {
+    width: 42px;
+    height: 42px;
+  }
+}
+.carousel__icon-btn--left {
+  left: -21px;
+
+  @include tablet {
+    left: -47px;
+  }
+  @include desktop {
+    left: -74px;
+  }
+}
+.carousel__icon-btn--right {
+  right: -21px;
+  @include tablet {
+    right: -47px;
+  }
+  @include desktop {
+    right: -74px;
+  }
+}
+.carousel__icon {
+  fill: #ffffff;
   width: 11px;
   height: 10px;
 
@@ -79,23 +111,8 @@
 }
 
 .carousel__icon--left {
-  left: -21px;
-
-  @include tablet {
-    left: -47px;
-  }
-  @include desktop {
-    left: -74px;
-  }
 }
 .carousel__icon--right {
-  right: -21px;
-  @include tablet {
-    right: -47px;
-  }
-  @include desktop {
-    right: -74px;
-  }
 }
 .transformanimation {
   transition: 4s all ease-in-out;

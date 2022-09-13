@@ -1,14 +1,21 @@
 .main-hero {
+  padding-top: 40px;
   padding-bottom: 40px;
 
   @include tablet {
+    padding-top: 34px;
     padding-bottom: 60px;
   }
   @include desktop {
+    padding-top: 98px;
     padding-bottom: 120px;
   }
 }
 .main-hero__container {
+  position: relative;
+}
+.main-hero__wrap {
+  margin: 0 auto;
   @include tablet {
     width: 440px;
   }
@@ -101,4 +108,33 @@
 }
 .main-hero__picture {
   object-fit: cover;
+}
+
+.main-hero__wrap-arrow {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @include tablet {
+    position: absolute;
+    @include centered-flex();
+    left: 74px;
+    top: 220px;
+  }
+  @include desktop {
+    left: 144px;
+    top: 390px;
+  }
+}
+.main-hero__link-arrow {
+}
+.main-hero__icon-arrow {
+  fill: #008cef;
+  @include tablet {
+    width: 16px;
+    height: 16px;
+  }
+  @include desktop {
+    width: 32px;
+    height: 32px;
+  }
 }

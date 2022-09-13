@@ -1,16 +1,10 @@
 .we-create-model {
 }
 .create-model {
-  padding: 0 20px;
-  margin-bottom: 40px;
+  padding-bottom: 60px;
 
-  @include tablet {
-    padding: 0 32px;
-    margin-bottom: 60px;
-  }
   @include desktop {
-    padding: 0 32px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 }
 .create-model-title {
