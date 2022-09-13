@@ -37,48 +37,50 @@
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
   }
 }
-.process-description__text-box {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 24px;
+.process-description__box {
   @include tablet {
-    margin-bottom: 55px;
     margin-left: 32px;
-    max-width: 335px;
   }
   @include desktop {
     margin-left: 85px;
+  }
+}
+.process-description__text-box {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 55px;
+    max-width: 335px;
+  }
+  @include desktop {
     max-width: 734px;
-    gap: 24px;
   }
 }
 .process-description__text {
-  // @include font(300, 16px, 1.25, null);
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
   @include font(16px, 300, 1.25, null);
   color: $primary-color-text;
   @include tablet {
-    // @include font(400, 16px, 1.25, null);
     @include font(16px, 400, 1.25, null);
   }
   @include desktop {
-    // @include font(300, 18px, 1.27, null);
     @include font(18px, 300, 1.27, null);
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 }
 .process-description__text--part {
-  // @include font(700, 16px, 1.25, null);
   @include font(16px, 700, 1.25, null);
   text-transform: uppercase;
   color: $secondary-color-text;
   @include desktop {
-    // @include font(700, 18px, 1.27, null);
     @include font(18px, 700, 1.27, null);
   }
 }
 .process-description__link {
   display: block;
-  // @include font(700, 16px, 1.5, 0.01em);
   @include font(16px, 700, 1.5, 0.01em);
   text-align: center;
   text-transform: uppercase;
@@ -98,9 +100,6 @@
     background-color: $accent-color;
   }
   @include tablet {
-    margin-left: 32px;
-  }
-  @include desktop {
-    margin-left: 85px;
+    margin-left: 0;
   }
 }
