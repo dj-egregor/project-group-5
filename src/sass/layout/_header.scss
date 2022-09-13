@@ -3,7 +3,7 @@
   width: 100%;
 
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
 
   @include desktop {
@@ -16,6 +16,10 @@
 
   @include tablet {
     margin-right: 211px;
+  }
+
+  @include desktop {
+    margin-right: 258px;
   }
 
   &__img {
@@ -93,6 +97,10 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  @include desktop {
+    margin-right: 118px;
+  }
 
   &_item {
     cursor: pointer;
@@ -228,6 +236,10 @@
 .desktop-nav {
   @media screen and (max-width: 1439px) {
     display: none;
+  }
+
+  @include desktop {
+    margin-right: auto;
   }
 }
 
