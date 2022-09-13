@@ -17,6 +17,7 @@
 .scanning-hero__title {
   @include font(24px, 700, 1.26, null);
   margin-bottom: 16px;
+  text-transform: uppercase;
 
   color: $secondary-color-text;
 
