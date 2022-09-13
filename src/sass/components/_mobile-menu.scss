@@ -9,7 +9,7 @@
   justify-content: space-between;
   overflow: auto;
   padding: 20px;
-  background-color: $primary-bgc;
+  // background-color: $primary-bgc;
 
   @include tablet {
     background-position: top center;
@@ -90,14 +90,22 @@
   }
 }
 
-.deco {
-  position: absolute;
+// .deco {
+//   position: absolute;
 
-  width: 74px;
-  height: 74px;
-  background-color: $primary-bgc;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  top: 294px;
-  left: -29px;
-  border-radius: 0px 0px 35px 0px;
+//   width: 74px;
+//   height: 74px;
+//   background-color: $primary-bgc;
+//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+//   top: 294px;
+//   left: -29px;
+//   border-radius: 0px 0px 35px 0px;
+// }
+
+.main {
+  visibility: hidden;
+  opacity: 0;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
