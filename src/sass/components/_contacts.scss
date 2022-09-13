@@ -85,10 +85,12 @@
 
   @include tablet {
     margin-bottom: 0;
+    margin-right: 142px;
   }
 
   @include desktop {
     margin-bottom: 30px;
+    margin-right: 0;
   }
 
   &--left {
@@ -101,7 +103,6 @@
 
 .wrap-hour {
   @include tablet {
-    margin-left: auto;
     text-align: right;
   }
   @include desktop {
