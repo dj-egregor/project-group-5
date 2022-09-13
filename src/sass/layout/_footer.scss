@@ -6,7 +6,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   text-align: center;
-  width: 100%;
+
   @include tablet {
     text-align: start;
   }
@@ -18,17 +18,25 @@
 }
 
 .logo-thumb {
-  display: flex;
-  justify-content: center;
+  margin-bottom: 19px;
 
   @include tablet {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
   }
 }
 
 .footer-content {
-  @include desktop {
+  @include tablet {
     display: flex;
+  }
+
+  @include desktop {
+    margin-left: 277px;
   }
 }
 
@@ -38,10 +46,6 @@
   @include tablet {
     margin-bottom: 0px;
   }
-
-  @include desktop {
-    margin-left: 277px;
-  }
 }
 
 .footer-menu-item:not(:last-child) {
@@ -49,7 +53,7 @@
 }
 
 .footer-menu-link {
-  @include font(16px, 400px, 1.25, 0.01em);
+  @include font(16px, 400, 1.25, 0.01em);
   @include animation(color, null, null);
   color: $primary-color-text;
   &:hover,
@@ -75,7 +79,7 @@
   }
 
   &-link {
-    @include font(16px, 400px, 1.25, 0.01em);
+    @include font(16px, 400, 1.25, 0.01em);
     @include animation(color, null, null);
     color: $primary-color-text;
     &:hover,
@@ -93,24 +97,26 @@
 
   @include desktop {
     text-align: left;
-    margin-left: 163px;
+    margin-left: 161px;
+  }
+}
+
+.footer-mail {
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 16px;
   }
 }
 
 .contacts-title {
-  font-style: inherit;
-  @include font(16px, 400px, 1.25, 0.01em);
+  @include font(16px, 400, 1.25, 0.01em);
   margin-bottom: 8px;
-}
-
-.address-mail {
-  margin-bottom: 24px;
 }
 
 .address-mail__link {
   font-style: normal;
-  @include font(16px, 400px, 1.25, 0.01em);
-  // @include font(400, 16, 1.25, 0.01em);
+  @include font(16px, 400, 1.25, 0.01em);
   @include animation(color, null, null);
   color: $secondary-color-text;
   &:hover,
@@ -123,7 +129,7 @@
 }
 
 .address-tel__link {
-  @include font(16px, 400px, 1.25, 0.01em);
+  @include font(16px, 400, 1.25, 0.01em);
   font-style: normal;
   @include animation(color, null, null);
   color: $secondary-color-text;
