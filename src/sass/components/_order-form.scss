@@ -1,23 +1,70 @@
+.order-section {
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.order-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include mobile {
+    max-width: 480px;
+  }
+
+  @include tablet {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
 .order-form {
   max-width: 280px;
-  justify-content: center;
-
-  margin: auto;
 
   @include tablet {
     max-width: 400px;
     position: relative;
+    margin: auto;
   }
   @include desktop {
     min-width: 555px;
-    margin-top: 10px;
   }
 }
+
+.order-form__title {
+  margin-bottom: 28px;
+  @include font(18px, 700, 1.28, null);
+  text-transform: uppercase;
+  color: $secondary-color-text;
+
+  @include tablet {
+    @include font(24px, 700, 1.28, null);
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  @include desktop {
+    @include font(36px, 700, 1.28, null);
+    margin-bottom: 44px;
+  }
+}
+
 .order-form__field {
   width: 280px;
   height: 44px;
   position: relative;
   margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid $secondary-color-text;
+  appearance: none; /* remove arrow        */
+  -webkit-appearance: none; /* remove arrow Chrome */
+  -moz-appearance: none; /* remove arrow FF     */
 
   @include tablet {
     width: 400px;
@@ -27,10 +74,14 @@
   }
 }
 
+.last {
+  margin-bottom: 44px;
+}
+
 .order-form__field input {
   border: none;
   border-bottom: 1px solid $secondary-color-text;
-  width: 280px;
+  width: 100%;
   height: 44px;
 
   @include tablet {
@@ -39,59 +90,55 @@
   @include desktop {
     width: 555px;
   }
+  &:focus {
+    outline: none;
+  }
+  &:focus + .order-form__field-label {
+    transform: translateY(-34px);
+    @include font(14px, 400, 1.25, null);
+  }
+  &:not(:placeholder-shown) + .order-form__field-label {
+    transform: translateY(-34px);
+    @include font(14px, 400, 1.25, null);
+  }
 }
+
 .order-form__field label {
   position: absolute;
-  bottom: 0px;
-}
-.order-form__title {
-  font-family: 'Cera Pro';
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.28;
+  left: 0;
+  bottom: 4px;
 
-  color: $secondary-color-text;
+  transition: transform 250ms linear;
 
-  margin-bottom: 8px;
-  @include tablet {
-    text-align: center;
-    font-size: 24px;
-  }
+  color: $primary-color-text;
+  @include font(16px, 400, 1.25, null);
+
   @include desktop {
-    text-align: left;
-    font-size: 36px;
+    @include font(18px, 400, 1.25, null);
   }
 }
 
 .order-form__message {
   position: relative;
   width: 280px;
-  height: 287px;
   margin-bottom: 40px;
-  margin-top: 44px;
+
   @include tablet {
     width: 400px;
   }
   @include desktop {
+    margin-bottom: 24px;
     width: 555px;
   }
 }
 
 .order-form__message label {
   @include desktop {
-    font-size: 18px;
+    @include font(18px, 400, 1.25, null);
   }
 }
-.order-form__field label {
-  color: $primary-color-text;
-  font-family: 'Cera Pro';
-  font-size: 16px;
-  line-height: 1.25;
-  @include desktop {
-    font-size: 18px;
-  }
-}
-.order-form__message input {
+
+.order-form__message textarea {
   box-sizing: border-box;
 
   width: 280px;
@@ -101,6 +148,7 @@
   border-radius: 50px 0px;
   outline: none;
   padding-left: 20px;
+  padding-top: 22px;
   @include tablet {
     width: 400px;
   }
@@ -109,36 +157,33 @@
   }
 }
 
-.order-form__message input::placeholder {
-  font-family: 'Cera Pro';
-  font-size: 16px;
-  line-height: 1.25;
+.order-form__message textarea::placeholder {
+  @include font(16px, 400, 1.25, null);
 
   position: absolute;
   top: 22px;
 
-  color: #cdcdcd;
+  color: $placeholder-color;
   margin: 0;
 
   @include desktop {
-    font-size: 18px;
+    @include font(18px, 400, 1.25, null);
   }
 }
 
 .order-form__icon {
   position: absolute;
-  fill: #cdcdcd;
-  bottom: -40px;
+  fill: $placeholder-color;
+  top: 180px;
   right: 23px;
 }
-.order-form__instruction {
-  font-family: 'Cera Pro';
-  font-size: 16px;
-  line-height: 1.25;
 
-  color: #cdcdcd;
+.order-form__instruction {
+  @include font(16px, 400, 1.25, null);
+
+  color: $placeholder-color;
   @include desktop {
-    font-size: 18px;
+    @include font(18px, 400, 1.25, null);
   }
 }
 
@@ -152,10 +197,7 @@
   width: 280px;
   height: 56px;
 
-  font-family: 'Cera Pro';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
+  @include font(16px, 700, 1.25, null);
   color: $secondary-color-text;
 
   outline: none;
@@ -166,13 +208,81 @@
   text-transform: uppercase;
 
   background: $footer-bgc;
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  box-shadow: -10px -10px 20px $primary-bgc,
+    10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px $primary-bgc;
   border-radius: 30.5px;
 
   @include tablet {
     max-width: 177px;
-    position: absolute;
-    right: 0;
+    @include centered-flex;
+    margin-left: auto;
   }
+}
+
+.choose-menu:focus {
+  border: none;
+  border-bottom: 1px solid $secondary-color-text;
+  width: 100%;
+  height: 44px;
+
+  @include tablet {
+    width: 400px;
+  }
+  @include desktop {
+    width: 555px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.choose-menu {
+  width: 280px;
+  height: 44px;
+  position: relative;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid $secondary-color-text;
+  appearance: none; /* remove arrow        */
+  -webkit-appearance: none; /* remove arrow Chrome */
+  -moz-appearance: none; /* remove arrow FF     */
+
+  @include tablet {
+    width: 400px;
+  }
+  @include desktop {
+    width: 555px;
+  }
+  @include desktop {
+    @include font(18px, 400, 1.25, null);
+  }
+}
+
+.menu-icon {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.choose-menu-one {
+  position: relative;
+}
+
+.menu-icon-one {
+  position: absolute;
+  bottom: 28px;
+  right: 0px;
+}
+
+.menu-icon-two {
+  position: absolute;
+  bottom: 28px;
+  right: 0px;
+}
+
+.menu-icon-three {
+  position: absolute;
+  bottom: 28px;
+  right: 0px;
 }

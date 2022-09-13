@@ -1,23 +1,21 @@
 .section {
-  @media screen and (max-width: 767px) {
-    width: 280px;
-  }
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @include desktop {
-    width: 1440px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 117px;
-    margin-right: 189px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
+
+.scanning-hero__container {
+  @include desktop {
+    padding-left: 149px;
+  }
+}
+
 .scanning-hero__title {
-  font-family: 'Cera Pro Bold';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.26;
-  margin: 0;
+  @include font(24px, 700, 1.26, null);
   margin-bottom: 16px;
 
   color: $secondary-color-text;
@@ -32,6 +30,7 @@
 }
 
 .scanning-hero__pharagraph-box {
+
   @media screen and (max-width: 767px) {
     
   }
@@ -67,7 +66,7 @@
     max-width: 241px;
     max-height: 172px;
     position: absolute;
-    top: 56%;
+    top: 53%;
     left: 490px;
     transform: translateY(-50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -93,7 +92,7 @@
     min-height: 286px;
     position: absolute;
     top: 80%;
-    left: 585px;
+    left: 700px;
     transform: translateY(-50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -117,11 +116,8 @@
 
 .scanning-hero__pharagraph {
   justify-content: center;
-  font-family: 'Cera Pro';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.25;
+
+  @include font(16px, 300, 1.25, null);
 
   color: $primary-color-text;
 
@@ -143,11 +139,9 @@
 
 .scanning-hero__pharagraph-small {
   justify-content: center;
-  font-family: 'Cera Pro';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.25;
+
+  @include font(16px, 300, 1.25, null);
+
   margin-bottom: 16px;
 
   color: $primary-color-text;
@@ -168,10 +162,8 @@
   }
 }
 
-.scanning-hero__pharagraph-first {
-  @include desktop {
-    margin-bottom: 16px;
-  }
+.first {
+  margin-bottom: 16px;
 }
 
 .new-row {

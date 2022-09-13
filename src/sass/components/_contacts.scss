@@ -7,27 +7,38 @@
 }
 
 .contacts__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include mobile {
+    max-width: 480px;
+  }
+
   @include tablet {
     display: flex;
+    max-width: 768px;
+    padding: 0 32px;
   }
 
   @include desktop {
     display: block;
     text-align: right;
+    padding: 0;
   }
 
-  &--left { 
+  &--left {
     @include desktop {
-    display: block;
-    text-align: left;
-  }
+      display: block;
+      text-align: left;
+    }
   }
 }
 
 .contacts__title {
   margin-bottom: 8px;
-  
-  @include font (700, 18px, 1.28, null);
+
+  @include font(18px, 700, 1.28, null);
   text-transform: uppercase;
   color: $secondary-color-text;
 
@@ -48,7 +59,7 @@
 
 .wrap-tel {
   margin-bottom: 24px;
-  
+
   @include tablet {
     margin-bottom: 0;
     margin-right: 25px;
@@ -60,9 +71,9 @@
 
   &--left {
     @include desktop {
-    margin-bottom: 68px;
-    margin-right: 0;
-  }
+      margin-bottom: 68px;
+      margin-right: 0;
+    }
   }
 }
 .wrap-mail {
@@ -78,9 +89,9 @@
 
   &--left {
     @include desktop {
-    margin-bottom: 68px;
-    margin-right: 0;
-  }
+      margin-bottom: 68px;
+      margin-right: 0;
+    }
   }
 }
 
@@ -95,9 +106,9 @@
 
   &--left {
     @include desktop {
-    margin-bottom: 0;
-    text-align: left;
-  }
+      margin-bottom: 0;
+      text-align: left;
+    }
   }
 }
 
@@ -106,13 +117,13 @@
     margin-bottom: 8px;
 
     @include desktop {
-    margin-bottom: 18px;
-  }
+      margin-bottom: 18px;
+    }
   }
 }
 .contacts__link {
   @include animation(color, null, null);
-  @include font (400, 16px, 1.25, null);
+  @include font(16px, 400, 1.25, null);
   font-style: normal;
   color: inherit;
 
@@ -128,7 +139,7 @@
 }
 
 .contacts__text {
-  @include font (400, 16px, 1.25, null);
+  @include font(16px, 400, 1.25, null);
 
   @include desktop {
     display: inline;

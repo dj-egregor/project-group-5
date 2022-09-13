@@ -1,41 +1,85 @@
-<form class="order-form">
-  <h1 class="order-form__title">ЗВ'ЯЖІТЬСЯ З НАМИ</h1>
+<section class="order-section">
+  <div class="order-container">
+    <h2 class="order-form__title">Зв'яжіться з нами</h2>
+    <form class="order-form">
+      <div class="order-form__field">
+        <input
+          type="text"
+          class="order-form__field-input"
+          name="name"
+          placeholder=" "
+          id="name"
+        />
+        <label for="name" class="order-form__field-label">Ім'я</label>
+      </div>
 
-  <div class="order-form__field">
-    <label for="name">Ім'я</label>
-    <input type="text" name="name" id="name" />
-    
-  </div>
+      <div class="order-form__field">
+        <input
+          type="email"
+          class="order-form__field-input"
+          name="mail"
+          placeholder=" "
+          id="mail"
+        />
+        <label for="mail" class="order-form__field-label">Email</label>
+      </div>
 
-  <div class="order-form__field">
-    <label for="mail">Email</label>
-    <input type="email" name="mail" id="mail" />
-  </div>
+      <div class="choose-menu-one">
+        <select class="choose-menu">
+          <option>Види пластика</option>
+          <option>PET</option>
+          <option>PEHD</option>
+          <option>PVC</option>
+        </select>
+        <svg class="menu-icon-one" width="20" height="20">
+          <use href="/src/images/icons.svg#icon-polygon"></use>
+        </svg>
+      </div>
 
-  <div class="order-form__field">
-    <label for="plastic">Види пластика</label>
-    <input type="text" name="plastic" id="plastic" />
-  </div>
-  <div class="order-form__field">
-    <label for="quality">Якість друку</label>
-    <input type="text" name="quality" id="quality" />
-  </div>
-  <div class="order-form__field">
-    <label for="color">Колір</label>
-    <input type="text" name="color" id="color" />
-  </div>
+      <div class="choose-menu-one">
+        <select class="choose-menu">
+          <option>Якість друку</option>
+          <option>100 мікрон</option>
+          <option>200 мікрон</option>
+          <option>300 мікрон</option>
+        </select>
+        <svg class="menu-icon-two" width="20" height="20">
+          <use href="/src/images/icons.svg#icon-polygon"></use>
+        </svg>
+      </div>
 
-  <div class="order-form__message">
-    <label for="comment">Повідомлення</label>
-    <input
-      name="comment"
-      id="comment"
-      placeholder="Залишіть своє повідомлення"
-    ></input>
-    <svg class="order-form__icon" width="22" height=20">
-      <use href="/src/images/icons.svg#icon-paper-clip"></use>
-    </svg>
-    <p class="order-form__instruction">*Прикріпіть зображення/креслення/STL/Obj/,<br class="br">CAD-модель</p>
+      <div class="choose-menu-one">
+        <select class="choose-menu">
+          <option>Колір</option>
+          <option>чорний</option>
+          <option>білий</option>
+          <option>коричневий</option>
+        </select>
+        <svg class="menu-icon-two" width="20" height="20">
+          <use href="/src/images/icons.svg#icon-polygon"></use>
+        </svg>
+      </div>
+
+      <div class="order-form__message">
+        <label for="comment">Повідомлення</label>
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Залишіть своє повідомлення"
+        ></textarea>
+
+        <p class="order-form__instruction">
+          *Прикріпіть зображення/креслення/STL/Obj/<br class="br" />CAD-модель
+        </p>
+        <label for="file-select">
+          <svg class="add-file-icon" width="22" height="20">
+            <use href="/src/images/icons.svg#icon-paper-clip"></use>
+          </svg>
+        </label>
+        <input class="select-file" type="file" name="file" id="file-select" />
+      </div>
+
+      <button type="submit" class="button-send">Відправити</button>
+    </form>
   </div>
-  <button type="submit" class="button-send">Відправити</button>
-</form>
+</section>

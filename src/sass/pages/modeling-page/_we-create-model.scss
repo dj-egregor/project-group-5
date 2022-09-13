@@ -1,70 +1,56 @@
 .we-create-model {
 }
 .create-model {
-  padding: 0 20px;
-  margin-bottom: 40px;
+  padding-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
-    padding: 0 32px;
-    margin-bottom: 60px;
-  }
-  @media screen and (min-width: 1440px) {
-    padding: 0 32px;
-    margin-bottom: 80px;
+  @include desktop {
+    padding-bottom: 80px;
   }
 }
 .create-model-title {
-  font-family: 'Cera Pro Bold';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: #487996;
-  max-width: 250px;
-  align-items: center;
-  text-align: left;
   margin-bottom: 16px;
   width: 100%;
-  @media screen and (min-width: 768px) {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.25;
-    text-transform: uppercase;
-    color: #487996;
+  max-width: 250px;
+  text-align: left;
+  @include font(16px, 700, 1.25, null);
+  text-transform: uppercase;
+  color: $secondary-color-text;
+
+  @include tablet {
+    margin-bottom: 24px;
     max-width: 435px;
     text-align: left;
-    margin-bottom: 24px;
+    @include font(24px, 700, 1.25, null);
+    text-transform: uppercase;
+    color: $secondary-color-text;
   }
 
-  @media screen and (min-width: 1440px) {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.25;
-    text-transform: uppercase;
-    color: #487996;
-    max-width: 650px;
-    text-align: left;
+  @include desktop {
     margin-bottom: 40px;
-    margin-left: 110px;
+    padding-left: 75px;
+    max-width: 800px;
+    text-align: left;
+    @include font(36px, 700, 1.25, null);
+    text-transform: uppercase;
+    color: $secondary-color-text;
   }
 }
 .create-model-list {
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 16px;
   column-gap: 20px;
-  margin-bottom: 40px;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    gap: 32px;
+  @include tablet {
     margin-bottom: 60px;
-  }
-  @media screen and (min-width: 1440px) {
     display: flex;
     gap: 32px;
+  }
+  @include desktop {
     margin-bottom: 80px;
+    display: flex;
+    gap: 32px;
   }
 }
 
@@ -72,13 +58,13 @@
   max-width: 100%;
   width: calc((100% - 20px) / 2);
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     max-width: 100%;
     width: calc((100% - 3 * 32px) / 4);
     margin-bottom: 0;
     padding: 0;
   }
-  @media screen and (min-width: 1440px) {
+  @include desktop {
     max-width: 100%;
     width: calc((100% - 3 * 32px) / 4);
     margin-bottom: 0;
@@ -86,22 +72,18 @@
   }
 }
 
-.create-model-img-odd {
-  border-radius: 0px 0px 0px 77px;
-  width: 100%;
-
-  @media screen and (min-width: 768px) {
-    border-radius: 0px 0px 0px 50px;
-  }
+.create-model-item:nth-child(2n + 1) {
+  border-radius: 0px 0px 0px 50px;
 }
 
-.create-model-img-pair {
-  border-radius: 77px 0px 77px;
-  width: 100%;
-  @media screen and (min-width: 768px) {
-    border-radius: 50px 0px 57px;
-  }
+.create-model-item:nth-child(2n) {
+  border-radius: 50px 0px 57px;
 }
+
+.create-model-img {
+  width: 100%;
+}
+
 .button-modeling {
   margin: 0 auto;
 }

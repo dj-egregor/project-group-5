@@ -6,16 +6,19 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: space-between;
   overflow: auto;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: $primary-bgc;
 
   opacity: 1;
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .modal-main:not(.is-open) {
@@ -49,31 +52,28 @@
 
 .modal-main__menu-link {
   text-decoration: none;
-  font-family: Cera Pro Bold;
-  font-size: 24px;
-  line-height: 1.25;
-  color: #487996;
+  color: $secondary-color-text;
   text-transform: uppercase;
+  @include font(24px, 700, 1.25, 0);
 }
 
 .current {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #487996;
+  -webkit-text-stroke: 1px $secondary-color-text;
 }
 
 .services {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Cera Pro;
   text-transform: none;
 
   &::before {
     content: '';
     margin-right: 12px;
-    border: 1px solid #487996;
+    border: 1px solid $secondary-color-text;
     border-radius: 3px 0px;
-    background-color: #487996;
+    background-color: $secondary-color-text;
     height: 7px;
     width: 7px;
   }
@@ -84,7 +84,7 @@
 
   width: 74px;
   height: 74px;
-  background-color: #ffffff;
+  background-color: $primary-bgc;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   top: 294px;
   left: -29px;

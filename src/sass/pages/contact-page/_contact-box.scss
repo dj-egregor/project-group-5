@@ -1,0 +1,13 @@
+.contact-box {
+  @include desktop {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 73px;
+    padding-left: 149px;
+    padding-right: 149px;
+    padding-bottom: 80px;
+  }
+}

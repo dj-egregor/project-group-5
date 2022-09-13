@@ -3,37 +3,31 @@
 }
 
 .footer-container {
-  max-width: 1440px;
   padding-top: 32px;
   padding-bottom: 32px;
   text-align: center;
   width: 100%;
-
-  @media screen and (min-width: 1440px) {
+  @include tablet {
+    text-align: start;
+  }
+  @include desktop {
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
-    text-align: left;
   }
 }
 
-.logo {
-  margin-bottom: 20px;
+.logo-thumb {
   display: flex;
   justify-content: center;
 
-  @media screen and (min-width: 1440px) {
+  @include tablet {
     margin-bottom: 0px;
-  }
-
-  &-img {
-    width: 192px;
-    height: 48px;
   }
 }
 
 .footer-content {
-  @media screen and (min-width: 768px) {
+  @include desktop {
     display: flex;
   }
 }
@@ -41,11 +35,11 @@
 .footer-menu {
   margin-bottom: 24px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-bottom: 0px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @include desktop {
     margin-left: 277px;
   }
 }
@@ -55,20 +49,24 @@
 }
 
 .footer-menu-link {
-  @include font(16, 400, 1.25, 0.01em);
-  // @include font(400, 16, 1.25, 0.01em);
+  @include font(16px, 400px, 1.25, 0.01em);
+  @include animation(color, null, null);
   color: $primary-color-text;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .footer-soc {
   margin-bottom: 24px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-left: 52px;
     margin-bottom: 0px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @include desktop {
     margin-left: 103px;
   }
 
@@ -77,49 +75,60 @@
   }
 
   &-link {
-    @include font(16, 400, 1.25, 0.01em);
-    // @include font(400, 16, 1.25, 0.01em);
+    @include font(16px, 400px, 1.25, 0.01em);
+    @include animation(color, null, null);
     color: $primary-color-text;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 
-.address {
-  font-style: inherit;
-}
-
 .footer-address {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     text-align: right;
     margin-left: auto;
   }
 
-  @media screen and (min-width: 1440px) {
+  @include desktop {
     text-align: left;
     margin-left: 163px;
   }
 }
 
-.address-text {
-  @include font(16, 400, 1.25, 0.01em);
-  // @include font(400, 16, 1.25, 0.01em);
+.contacts-title {
+  font-style: inherit;
+  @include font(16px, 400px, 1.25, 0.01em);
   margin-bottom: 8px;
 }
 
-.address-item-mail {
+.address-mail {
   margin-bottom: 24px;
 }
 
-.address-link-mail {
-  @include font(16, 400, 1.25, 0.01em);
+.address-mail__link {
+  font-style: normal;
+  @include font(16px, 400px, 1.25, 0.01em);
   // @include font(400, 16, 1.25, 0.01em);
+  @include animation(color, null, null);
   color: $secondary-color-text;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
-.address-item-tell:not(:last-child) {
+.address-tel__item:not(:last-child) {
   margin-bottom: 8px;
 }
 
-.address-link-tell {
-  @include font(16, 400, 1.25, 0.01em);
-  // @include font(400, 16, 1.25, 0.01em);
+.address-tel__link {
+  @include font(16px, 400px, 1.25, 0.01em);
+  font-style: normal;
+  @include animation(color, null, null);
   color: $secondary-color-text;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

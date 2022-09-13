@@ -1,6 +1,8 @@
 <header class="header">
   <div class="container header-container">
-    <a href="" class="logo">
+
+    <a href="./index.html" class="logo">
+
       <svg
         class="logo__img"
         width="101"
@@ -48,23 +50,36 @@
           </li>
 
           <li class="nav-menu__item">
-            <a href="#" class="nav-menu__link after">Послуги </a>
-            <ul class="submenu">
-              <li class="submenu__item">
-                <a href="./modeling.html" class="submenu__link"
-                  >3D Моделювання</a
-                >
-              </li>
-              <li class="submenu__item">
-                <a href="./scanning.html" class="submenu__link"
-                  >3D Сканування</a
-                >
-              </li>
-              <li class="submenu__item">
-                <a href="./printing.html" class="submenu__link">3D Друк</a>
-              </li>
-            </ul>
+            <a href="#" class="nav-menu__link nav-menu__link--submenu"
+              >Послуги
+              <svg
+                class="nav-menu__icon"
+                width="10"
+                height="10"
+                aria-label="Кнопка випадаючого меню Послуги"
+              >
+                <use href="./images/icons.svg#icon-polygon"></use>
+              </svg>
+            </a>
+            <div class="submenu-wrap">
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a href="./modeling.html" class="submenu__link"
+                    >3D Моделювання</a
+                  >
+                </li>
+                <li class="submenu__item">
+                  <a href="./scanning.html" class="submenu__link"
+                    >3D Сканування</a
+                  >
+                </li>
+                <li class="submenu__item">
+                  <a href="./printing.html" class="submenu__link">3D Друк</a>
+                </li>
+              </ul>
+            </div>
           </li>
+
           <li class="nav-menu__item">
             <a href="./order.html" class="nav-menu__link">Замовити</a>
           </li>
@@ -75,45 +90,65 @@
       </nav>
     </div>
     <div class="nav-right">
-      <button
-        type="button"
-        class="tel-open js-open-modal-phone js-close-modal-phone"
-      >
-        <svg
-          class="tel-open__icon"
-          width="24"
-          height="24"
-          aria-label="Кнопка відображення контактів"
+      <div class="nav-ring__tel">
+        <button
+          type="button"
+          class="tel-open js-open-modal-phone js-close-modal-phone"
         >
-          <use href="./images/icons.svg#icon-icon-tel"></use>
-        </svg>
-      </button>
+          <svg
+            class="tel-open__icon"
+            width="24"
+            height="24"
+            aria-label="Кнопка відображення контактів"
+          >
+            <use href="./images/icons.svg#icon-icon-tel"></use>
+          </svg>
+        </button>
+        <div class="wrapper js-modal-phone-container">
+          <div class="modal-phone">
+            <ul class="mobile-phones">
+              <li class="mobile-phones__list">
+                <a class="mobile-phones__link" href="tel:+380936432288">
+                  +38 (093) 643 22 88
+                </a>
+              </li>
+              <li class="mobile-phones__list">
+                <a class="mobile-phones__link" href="tel:+380503454423">
+                  +38 (050) 345 44 23
+                </a>
+              </li>
+            </ul>
+            <div class="triangle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-nav-right">
+        <select class="lang">
+          <option value="ENG" class="lang__item">ENG</option>
+          <option value="RUS" class="lang__item">RUS</option>
+          <option value="UKR" class="lang__item" selected>UKR</option>
+        </select>
 
-      <select class="lang">
-        <option value="ENG">ENG</option>
-        <option value="RUS">RUS</option>
-        <option value="UKR" selected>UKR</option>
-      </select>
-
-      <div class="tablet-contacts">
-        <ul class="tab-contacts list-item">
-          <li class="tab-contacts__item">
-            <a href="tel:+380936432288" class="tab-contacts__link">
-              <svg class="tab-contacts__icon" width="14" height="14">
-                <use href="./images/icons.svg#icon-icon-tel"></use>
-              </svg>
-              +38 093 643 22 88
-            </a>
-          </li>
-          <li class="tab-contacts__item">
-            <a href="tel:+380503454423" class="tab-contacts__link">
-              <svg class="tab-contacts__icon" width="14" height="14">
-                <use href="./images/icons.svg#icon-icon-tel"></use>
-              </svg>
-              +38 050 345 44 23
-            </a>
-          </li>
-        </ul>
+        <div class="tablet-contacts">
+          <ul class="tab-contacts list-item">
+            <li class="tab-contacts__item tab-contacts__item--top">
+              <a href="tel:+380936432288" class="tab-contacts__link">
+                <svg class="tab-contacts__icon" width="14" height="14">
+                  <use href="./images/icons.svg#icon-icon-tel"></use>
+                </svg>
+                +38 093 643 22 88
+              </a>
+            </li>
+            <li class="tab-contacts__item tab-contacts__item--bottom">
+              <a href="tel:+380503454423" class="tab-contacts__link">
+                <svg class="tab-contacts__icon" width="14" height="14">
+                  <use href="./images/icons.svg#icon-icon-tel"></use>
+                </svg>
+                +38 050 345 44 23
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
