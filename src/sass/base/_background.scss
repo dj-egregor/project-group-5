@@ -2,14 +2,14 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 480px;
-  max-width: 480px;
+  // max-width: 480px;
   @include centered-margin();
   background-image: url('../images/img-bg/mobile/bg-main-mob-1x.jpg');
   @include retina {
     background-image: url('../images/img-bg/mobile/bg-main-mob-2x.jpg');
   }
   @include tablet {
-    max-width: 768px;
+    // max-width: 768px;
     background-size: 768px;
     background-image: url('../images/img-bg/tablet/bg-main-tab-1x.jpg');
     @include retina {
@@ -17,7 +17,7 @@
     }
   }
   @include desktop {
-    max-width: 1440px;
+    // max-width: 1440px;
     background-size: 1440px;
     background-image: url('../images/img-bg/desktop/bg-main-dt-1x.jpg');
     @include retina {
@@ -29,21 +29,24 @@
 .modeling-page {
   background-repeat: no-repeat;
   background-position: top;
-  max-width: 480px;
+  // max-width: 480px;
+  background-size: 480px;
   @include centered-margin();
   background-image: url('../images/img-bg/mobile/bg-3d-modeling-mob-1x.jpg');
   @include retina {
     background-image: url('../images/img-bg/mobile/bg-3d-modeling-mob-2x.jpg');
   }
   @include tablet {
-    max-width: 768px;
+    // max-width: 768px;
+    background-size: 768px;
     background-image: url('../images/img-bg/tablet/bg-3d-modeling-tab-1x.jpg');
     @include retina {
       background-image: url('../images/img-bg/tablet/bg-3d-modeling-tab-2x.jpg');
     }
   }
   @include desktop {
-    max-width: 1440px;
+    // max-width: 1440px;
+    background-size: 1440px;
     background-image: url('../images/img-bg/desktop/bg-3d-modeling-dt-1x.jpg');
     @include retina {
       background-image: url('../images/img-bg/desktop/bg-3d-modeling-dt-2x.jpg');
@@ -54,21 +57,24 @@
 .scanning-page {
   background-repeat: no-repeat;
   background-position: top;
-  max-width: 480px;
+  // max-width: 480px;
+  background-size: 480px;
   @include centered-margin();
   background-image: url('../images/img-bg/mobile/bg-3d-scanning-mob-1x.jpg');
   @include retina {
     background-image: url('../images/img-bg/mobile/bg-3d-scanning-mob-2x.jpg');
   }
   @include tablet {
-    max-width: 768px;
+    // max-width: 768px;
+    background-size: 768px;
     background-image: url('../images/img-bg/tablet/bg-3d-scanning-tab-1x.jpg');
     @include retina {
       background-image: url('../images/img-bg/tablet/bg-3d-scanning-tab-2x.jpg');
     }
   }
   @include desktop {
-    max-width: 1440px;
+    // max-width: 1440px;
+    background-size: 1440px;
     background-image: url('../images/img-bg/desktop/bg-3d-scanning-dt-1x.jpg');
     @include retina {
       background-image: url('../images/img-bg/desktop/bg-3d-scanning-dt-2x.jpg');
@@ -79,21 +85,24 @@
 .printing-page {
   background-repeat: no-repeat;
   background-position: top;
-  max-width: 480px;
+  // max-width: 480px;
+  background-size: 480px;
   @include centered-margin();
   background-image: url('../images/img-bg/mobile/bg-3d-printing-mob-1x.jpg');
   @include retina {
     background-image: url('../images/img-bg/mobile/bg-3d-printing-mob-2x.jpg');
   }
   @include tablet {
-    max-width: 768px;
+    // max-width: 768px;
+    background-size: 768px;
     background-image: url('../images/img-bg/tablet/bg-3d-printing-tab-1x.jpg');
     @include retina {
       background-image: url('../images/img-bg/tablet/bg-3d-printing-tab-2x.jpg');
     }
   }
   @include desktop {
-    max-width: 1440px;
+    // max-width: 1440px;
+    background-size: 1440px;
     background-image: url('../images/img-bg/desktop/bg-3d-printing-dt-1x.jpg');
     @include retina {
       background-image: url('../images/img-bg/desktop/bg-3d-printing-dt-2x.jpg');
@@ -104,21 +113,24 @@
 .take-order-page {
   background-repeat: no-repeat;
   background-position: top;
-  max-width: 480px;
+  // max-width: 480px;
+  background-size: 480px;
   @include centered-margin();
   background-image: url('../images/img-bg/mobile/bg-take-order-mob-1x.jpg');
   @include retina {
     background-image: url('../images/img-bg/mobile/bg-take-order-mob-2x.jpg');
   }
   @include tablet {
-    max-width: 768px;
+    // max-width: 768px;
+    background-size: 768px;
     background-image: url('../images/img-bg/tablet/bg-take-order-tab-1x.jpg');
     @include retina {
       background-image: url('../images/img-bg/tablet/bg-take-order-tab-2x.jpg');
     }
   }
   @include desktop {
-    max-width: 1440px;
+    // max-width: 1440px;
+    background-size: 1440px;
     background-image: url('../images/img-bg/desktop/bg-take-order-dt-1x.jpg');
     @include retina {
       background-image: url('../images/img-bg/desktop/bg-take-order-dt-2x.jpg');
@@ -129,21 +141,24 @@
 .contact-page {
   background-repeat: no-repeat;
   background-position: top;
-  max-width: 480px;
+  // max-width: 480px;
+  background-size: 480px;
   @include centered-margin();
   background-image: url('../images/img-bg/mobile/bg-contact-mob-1x.jpg');
   @include retina {
     background-image: url('../images/img-bg/mobile/bg-contact-mob-2x.jpg');
   }
   @include tablet {
-    max-width: 768px;
+    // max-width: 768px;
+    background-size: 768px;
     background-image: url('../images/img-bg/tablet/bg-contact-tab-1x.jpg');
     @include retina {
       background-image: url('../images/img-bg/tablet/bg-contact-tab-2x.jpg');
     }
   }
   @include desktop {
-    max-width: 1440px;
+    // max-width: 1440px;
+    background-size: 1440px;
     background-image: url('../images/img-bg/desktop/bg-contact-dt-1x.jpg');
     @include retina {
       background-image: url('../images/img-bg/desktop/bg-contact-dt-2x.jpg');
