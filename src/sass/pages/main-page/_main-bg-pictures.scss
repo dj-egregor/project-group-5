@@ -110,8 +110,6 @@
       background-image: url('../images/desktop/decor/decor-5-desktop@1x.jpg');
       bottom: -175%;
       right: 31.65px;
-      // width: 144px;
-      // height: 144px;
 
       @include retina {
         background-image: url('../images/desktop/decor/decor-5-desktop@2x.jpg');
@@ -121,10 +119,8 @@
   &--arrow {
     @include tablet {
       @include centered-flex();
-      bottom: 40.82px;
       left: 107.48px;
-      // width: 74px;
-      // height: 74px;
+      bottom: 40.82px;
     }
     @include desktop {
       left: 170.48px;
