@@ -24,26 +24,41 @@
         <label for="mail" class="order-form__field-label">Email</label>
       </div>
 
-      <select class="order-form__field">
-        <option>Види пластика</option>
-        <option>PET</option>
-        <option>PEHD</option>
-        <option>PVC</option>
-      </select>
+      <div class="choose-menu-one">
+        <select class="choose-menu">
+          <option>Види пластика</option>
+          <option>PET</option>
+          <option>PEHD</option>
+          <option>PVC</option>
+        </select>
+        <svg class="menu-icon-one" width="20" height="20">
+          <use href="/src/images/icons.svg#icon-polygon"></use>
+        </svg>
+      </div>
 
-      <select class="order-form__field">
-        <option>Якість друку</option>
-        <option>100 мікрон</option>
-        <option>200 мікрон</option>
-        <option>300 мікрон</option>
-      </select>
+      <div class="choose-menu-one">
+        <select class="choose-menu">
+          <option>Якість друку</option>
+          <option>100 мікрон</option>
+          <option>200 мікрон</option>
+          <option>300 мікрон</option>
+        </select>
+        <svg class="menu-icon-two" width="20" height="20">
+          <use href="/src/images/icons.svg#icon-polygon"></use>
+        </svg>
+      </div>
 
-      <select class="order-form__field">
-        <option>Колір</option>
-        <option>чорний</option>
-        <option>білий</option>
-        <option>коричневий</option>
-      </select>
+      <div class="choose-menu-one">
+        <select class="choose-menu">
+          <option>Колір</option>
+          <option>чорний</option>
+          <option>білий</option>
+          <option>коричневий</option>
+        </select>
+        <svg class="menu-icon-two" width="20" height="20">
+          <use href="/src/images/icons.svg#icon-polygon"></use>
+        </svg>
+      </div>
 
       <div class="order-form__message">
         <label for="comment">Повідомлення</label>
@@ -63,6 +78,7 @@
         </label>
         <input class="select-file" type="file" name="file" id="file-select" />
       </div>
+
       <button type="submit" class="button-send">Відправити</button>
     </form>
   </div>
