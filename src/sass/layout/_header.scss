@@ -3,7 +3,7 @@
   width: 100%;
 
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
 
   @include desktop {
@@ -179,6 +179,7 @@
 
 .wrapper {
   position: absolute;
+  z-index: 3;
   top: 45px;
   right: -65px;
   opacity: 1;
@@ -230,6 +231,11 @@
     text-decoration: none;
     @include font(16px, 400, 1.25, 0.01em);
     color: $primary-color-text;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 
