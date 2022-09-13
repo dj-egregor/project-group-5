@@ -1,23 +1,38 @@
-// (() => {
-//   const refs = {
-//     openMenuBtn: document.querySelector('.more-photo__img'),
-//     closeMenuBtn: document.querySelector('.btn-close--photo'),
-//     menu: document.querySelector('.backdrop'),
-//     body: document.querySelector('body'),
-//     menuList: document.querySelectorAll('.more-photo__list'),
-//   };
+(() => {
+  const refs = {
+    openSlaider: document.querySelectorAll('.more-photo__link'),
+    closeSlaider: document.querySelector('.backdrop'),
+    backDrop: document.querySelector('.backdrop'),
+    body: document.querySelector('body'),
+    menuList: document.querySelectorAll('.more-photo__link'),
+  };
 
-//   refs.openMenuBtn.addEventListener('click', toggleMenu);
-//   refs.closeMenuBtn.addEventListener('click', toggleMenu);
-//   refs.menuList.addEventListener('click', removeMenu);
+  refs.openSlaider.addEventListener('click', openSlaider);
+  refs.closeSlaider.addEventListener('click', closeSlaider);
+  refs.openSlaider.forEach(function (openSlaider) {
+    console.log(openSlaider);
+  });
+  // refs.close.addEventListener('click', toggleMenu);
+  // refs.menuList.addEventListener('click', removeMenu);
 
-//   function toggleMenu() {
-//     refs.menu.classList.toggle('is-hidden');
-//     refs.body.classList.toggle('no-scroll');
-//     refs.body.classList.toggle('no-scroll');
-//   }
+  function openSlaider(event) {
+    console.log(event);
+    event.preventDefault();
 
-//   function removeMenu() {
-//     refs.menu.classList.add('is-hidden');
-//   }
-// })();
+    // refs.menu.classList.toggle('is-hidden');
+    // refs.menu.classList.toggle('is-hidden');
+    // refs.body.classList.toggle('no-scroll');
+    // refs.body.classList.toggle('no-scroll');
+  }
+  // function myFunction() {
+  //   function myFunction(event) {
+  //     var x = event.target;
+  //     document.getElementById('demo').innerHTML =
+  //       'Triggered by a ' + x.tagName + ' element';
+  //   }
+  // }
+
+  // function removeMenu() {
+  //   refs.menu.classList.add('is-hidden');
+  // }
+})();
