@@ -1,2 +1,0 @@
-!function(){var e={openSlaider:document.querySelectorAll(".more-photo__link"),closeSlaider:document.querySelector(".backdrop"),backDrop:document.querySelector(".backdrop"),body:document.querySelector("body"),menuList:document.querySelectorAll(".more-photo__link")};e.openSlaider.addEventListener("click",(function(e){console.log(e),e.preventDefault()})),e.closeSlaider.addEventListener("click",closeSlaider),e.openSlaider.forEach((function(e){console.log(e)}))}();
-//# sourceMappingURL=index.bd0f2e31.js.map
