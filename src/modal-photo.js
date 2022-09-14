@@ -1,3 +1,4 @@
+
 (() => {
   const refs = {
     openSlaider: document.getElementsByClassName('.more-photo__picture'),
@@ -51,4 +52,5 @@
 //   function removeMenu() {
 //     refs.menu.classList.add('is-hidden');
 //   }
+
 // })();

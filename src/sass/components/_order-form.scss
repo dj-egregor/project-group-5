@@ -93,7 +93,7 @@
   &:focus,
   :hover {
     outline: none;
-    border-bottom: 3px solid $secondary-color-text;
+    border-bottom: 2px solid $secondary-color-text;
   }
   &:focus + .order-form__field-label {
     transform: translateY(-34px);
@@ -162,7 +162,7 @@
   }
   &:focus,
   :hover {
-    border: 3px solid $secondary-color-text;
+    border: 2px solid $secondary-color-text;
   }
 }
 
@@ -216,7 +216,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  background: $footer-bgc;
+  background-color: $footer-bgc;
   box-shadow: -10px -10px 20px $primary-bgc,
     10px 10px 20px rgba(72, 121, 150, 0.1),
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px $primary-bgc;
@@ -228,8 +228,11 @@
     margin-left: auto;
   }
 
+  @include animation(color, background-color, box-shadow);
   &:focus,
-  :hover {
+  &:hover {
+    color: $primary-color-text;
+    background-color: $accent-color;
     box-shadow: -10px -10px 20px $primary-bgc,
       10px 10px 20px rgba(16, 27, 34, 0.1), 5px 5px 10px rgba(16, 16, 16, 0.25),
       -5px -5px 10px $primary-bgc;
@@ -239,7 +242,7 @@
 .choose-menu:focus {
   border: none;
   outline: none;
-  border-bottom: 3px solid $secondary-color-text;
+  border-bottom: 2px solid $secondary-color-text;
   width: 100%;
   height: 44px;
 

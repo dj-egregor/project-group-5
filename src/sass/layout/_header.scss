@@ -142,20 +142,22 @@
       padding-top: 10px;
 
       @include tablet {
-        padding-top: 0;
+        padding-top: 0px;
+        padding-bottom: 5px;
       }
     }
     &--bottom {
       padding-bottom: 10px;
 
       @include tablet {
-        padding-bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 0px;
       }
     }
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
   }
   &__link {
     @include font(16px, null, 1.25, 0.01em);
@@ -321,7 +323,7 @@
   position: absolute;
   top: 10%;
   left: -40%;
-  border-radius: 0 0 60px 60px;
+  border-radius: 0 0 70px 70px;
   background: transparent;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   text-align: center;
