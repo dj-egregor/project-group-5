@@ -9,7 +9,6 @@
   justify-content: space-between;
   overflow: auto;
   padding: 20px;
-  // background-color: $primary-bgc;
 
   @include tablet {
     background-position: top center;
@@ -68,11 +67,6 @@
   @include font(24px, 700, 1.25, 0);
 }
 
-.current {
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px $secondary-color-text;
-}
-
 .services {
   display: flex;
   align-items: center;
@@ -90,22 +84,11 @@
   }
 }
 
-// .deco {
-//   position: absolute;
-
-//   width: 74px;
-//   height: 74px;
-//   background-color: $primary-bgc;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   top: 294px;
-//   left: -29px;
-//   border-radius: 0px 0px 35px 0px;
-// }
-
 .main {
   visibility: hidden;
   opacity: 0;
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-image: none;
 }
