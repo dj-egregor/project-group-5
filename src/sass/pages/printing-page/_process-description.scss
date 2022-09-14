@@ -93,11 +93,14 @@
   border-radius: 30.5px;
   box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-  @include animation(color, background-color, null);
+  @include animation(color, background-color, box-shadow);
   &:hover,
   &:focus {
     color: $primary-color-text;
     background-color: $accent-color;
+    box-shadow: -10px -10px 20px $primary-bgc,
+      10px 10px 20px rgba(16, 27, 34, 0.1), 5px 5px 10px rgba(16, 16, 16, 0.25),
+      -5px -5px 10px $primary-bgc;
   }
   @include tablet {
     margin-left: 0;
