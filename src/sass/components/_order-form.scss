@@ -83,6 +83,7 @@
   border-bottom: 1px solid $secondary-color-text;
   width: 100%;
   height: 44px;
+  @include animation(border-bottom, null, null);
 
   @include tablet {
     width: 400px;
@@ -91,9 +92,9 @@
     width: 555px;
   }
   &:focus,
-  :hover {
+  &:hover {
     outline: none;
-    border-bottom: 2px solid $secondary-color-text;
+    border-bottom: 2px solid $accent-color;
   }
   &:focus + .order-form__field-label {
     transform: translateY(-34px);
@@ -118,6 +119,13 @@
   color: $primary-color-text;
   @include font(16px, 400, 1.25, null);
 
+  @include animation(color, null, null);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
   @include desktop {
     @include font(18px, 400, 1.25, null);
   }
@@ -138,6 +146,13 @@
 }
 
 .order-form__message label {
+  @include animation(color, null, null);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
   @include desktop {
     @include font(18px, 400, 1.25, null);
   }
@@ -160,9 +175,12 @@
   @include desktop {
     width: 555px;
   }
+
+  @include animation(border, null, null);
+
   &:focus,
-  :hover {
-    border: 2px solid $secondary-color-text;
+  &:hover {
+    border: 2px solid $accent-color;
   }
 }
 
@@ -239,10 +257,12 @@
   }
 }
 
-.choose-menu:focus {
+.choose-menu:focus,
+.choose-menu:hover {
+  @include animation(border-bottom, null, null);
   border: none;
   outline: none;
-  border-bottom: 2px solid $secondary-color-text;
+  border-bottom: 2px solid $accent-color;
   width: 100%;
   height: 44px;
 
