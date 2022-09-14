@@ -157,7 +157,7 @@
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
   }
   &__link {
     @include font(16px, null, 1.25, 0.01em);
