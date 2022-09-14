@@ -1,0 +1,2 @@
+!function(){var e={openSlaider:document.getElementsByClassName(".more-photo__picture"),closeSlider:document.querySelector(".btn-close__slider"),menu:document.querySelector(".mob-menu"),body:document.querySelector("body"),menuList:document.querySelector(".mob-menu-list")};function o(){e.menu.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll"),e.body.classList.toggle("no-scroll")}e.openSlaider.addEventListener("click",o),e.closeSlider.addEventListener("click",o),e.menuList.addEventListener("click",removeMenu)}();
+//# sourceMappingURL=index.9ce44bba.js.map
