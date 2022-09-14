@@ -48,6 +48,7 @@
 }
 .carousel__slaider {
   @include centered-flex;
+
   overflow: hidden;
   @include mobile {
     width: 390px;
