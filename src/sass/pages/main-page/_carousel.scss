@@ -49,20 +49,20 @@
 .carousel__slaider {
   @include centered-flex;
   overflow: hidden;
-  // @include mobile {
-  //   width: 390px;
-  //   height: 259px;
-  // }
+  @include mobile {
+    width: 390px;
+    height: 259px;
+  }
 
-  // @include tablet {
-  //   width: 554px;
-  //   height: 369px;
-  // }
+  @include tablet {
+    width: 554px;
+    height: 369px;
+  }
 
-  // @include desktop {
-  //   width: 906px;
-  //   height: 605px;
-  // }
+  @include desktop {
+    width: 906px;
+    height: 605px;
+  }
 }
 .carousel__img {
   object-fit: cover;
