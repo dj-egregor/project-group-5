@@ -142,14 +142,16 @@
       padding-top: 10px;
 
       @include tablet {
-        padding-top: 0;
+        padding-top: 0px;
+        padding-bottom: 5px;
       }
     }
     &--bottom {
       padding-bottom: 10px;
 
       @include tablet {
-        padding-bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 0px;
       }
     }
   }
