@@ -1,3 +1,7 @@
+body.modal-open {
+  overflow: hidden;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -10,20 +14,15 @@
   pointer-events: none;
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms linear, visibility 250ms linear;
-}
-.backdrop.is-hidden {
-  // opacity: 0;
-  // visibility: hidden;
-  // pointer-events: none;
-  // transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  //   transition: opacity $animationDelay, visibility $animationDelay;
+  transition: opacity 250ms $timing-function 250ms,
+    visibility 250ms $timing-function 250ms;
 }
 
 .carousel__wrap {
@@ -93,7 +92,7 @@
     height: 42px;
   }
 }
-.carousel__icon-btn--left {
+.carousel__icon-btn--prev {
   left: -21px;
 
   @include tablet {
@@ -103,7 +102,7 @@
     left: -74px;
   }
 }
-.carousel__icon-btn--right {
+.carousel__icon-btn--next {
   right: -21px;
   @include tablet {
     right: -47px;
@@ -127,12 +126,8 @@
   }
 }
 
-.carousel__icon--left {
-}
-.carousel__icon--right {
-}
-.transformanimation {
-  transition: 4s all ease-in-out;
+.transform {
+  transition: all250ms $timing-function;
 }
 
 // .modal {
