@@ -16,7 +16,7 @@
 
   backDrop.addEventListener('click', function () {
     backDrop.classList.add('is-hidden');
-    console.log(342423);
+    console.log();
   });
 
   //   const refs = {
