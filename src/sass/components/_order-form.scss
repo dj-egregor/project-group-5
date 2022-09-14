@@ -93,7 +93,7 @@
   &:focus,
   :hover {
     outline: none;
-    border-bottom: 3px solid $secondary-color-text;
+    border-bottom: 2px solid $secondary-color-text;
   }
   &:focus + .order-form__field-label {
     transform: translateY(-34px);
@@ -162,7 +162,7 @@
   }
   &:focus,
   :hover {
-    border: 3px solid $secondary-color-text;
+    border: 2px solid $secondary-color-text;
   }
 }
 
@@ -239,7 +239,7 @@
 .choose-menu:focus {
   border: none;
   outline: none;
-  border-bottom: 3px solid $secondary-color-text;
+  border-bottom: 2px solid $secondary-color-text;
   width: 100%;
   height: 44px;
 
