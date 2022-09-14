@@ -116,9 +116,10 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
+  height: 37px;
   @include desktop {
     margin-right: 95px;
+    height: 50px;
   }
 
   &_item {
