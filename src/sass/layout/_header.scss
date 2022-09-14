@@ -17,6 +17,7 @@
 
   @include desktop {
     margin-right: 258px;
+    padding-top: 40px;
   }
 
   &__img {
@@ -154,9 +155,10 @@
     }
   }
 
-  &__item:not(:last-child) {
-    // margin-bottom: 10px;
-  }
+  // &__item:not(:last-child) {
+  //   // margin-bottom: 10px;
+  // }
+
   &__link {
     @include font(16px, null, 1.25, 0.01em);
     font-family: 'Cera Pro', sans-serif;

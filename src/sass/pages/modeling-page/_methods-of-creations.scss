@@ -1,11 +1,16 @@
 .method-of-creation-section {
   padding-bottom: 40px;
   @include desktop {
-    padding-left: 120px;
-    padding-right: 120px;
     padding-bottom: 100px;
   }
 }
+
+.method-of-creation-container {
+  @include desktop {
+    padding-left: 149px;
+  }
+}
+
 .method-of-creation__title {
   @include font(18px, 700, 23px, 1.28);
   text-transform: uppercase;

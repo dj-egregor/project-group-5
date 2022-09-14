@@ -1,18 +1,21 @@
 .footer {
   background-color: $footer-bgc;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include desktop {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .footer-container {
-  padding-top: 32px;
-  padding-bottom: 32px;
   text-align: center;
 
   @include tablet {
     text-align: start;
   }
   @include desktop {
-    padding-top: 40px;
-    padding-bottom: 40px;
     display: flex;
   }
 }

@@ -1,12 +1,11 @@
 .we-create-model {
-}
-.create-model {
   padding-bottom: 60px;
 
   @include desktop {
     padding-bottom: 80px;
   }
 }
+
 .create-model-title {
   margin-bottom: 16px;
   width: 100%;
@@ -27,7 +26,7 @@
 
   @include desktop {
     margin-bottom: 40px;
-    padding-left: 75px;
+    padding-left: 117px;
     max-width: 800px;
     text-align: left;
     @include font(36px, 700, 1.25, null);

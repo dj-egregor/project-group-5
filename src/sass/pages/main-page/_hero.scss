@@ -19,42 +19,29 @@
   text-align: center;
   margin: 0 auto 32px;
   font-family: 'Caviar Dreams', sans-serif;
-  @include font(18px, 400, 21px, null);
+  @include font(18px, 400, 1.17, null);
   @media screen and (max-width: 1439px) {
     max-width: 336px;
   }
-
-  // font-size: 18px;
-  // font-weight: 21px;
   @include tablet {
-    @include font(24px, 400, 28px, null);
+    @include font(24px, 400, 1.17, null);
     margin-bottom: 60px;
-
-    // font-size: 24px;
-    // line-height: 28px;
   }
   @include desktop {
     max-width: 630px;
-    @include font(48px, 400, 56px, null);
-    // font-size: 48px;
-    // line-height: 56px;
+    @include font(48px, 400, 1.17, null);
   }
 }
 .hero__after-title {
   text-align: center;
   font-family: 'Caviar Dreams', sans-serif;
-  @include font(16px, 400, 19px, null);
-  // font-size: 16px;
-  // line-height: 19px;
+  @include font(16px, 400, 1.19, null);
+
   @include tablet {
-    @include font(18px, 400, 21px, null);
-    // font-size: 18px;
-    // line-height: 21px;
+    @include font(18px, 400, 1.17, null);
   }
   @include desktop {
-    @include font(36px, 400, 42px, null);
-    // font-size: 36px;
-    // line-height: 42px;
+    @include font(36px, 400, 1.17, null);
   }
 }
 .main-hero__list {
